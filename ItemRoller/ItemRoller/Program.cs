@@ -1,5 +1,5 @@
 ﻿using ItemRoller.Data_Structure;
-using ItemRoller.Loaders.JSON;
+using ItemRoller.Loaders;
 using ItemRoller.Visitors;
 using System;
 

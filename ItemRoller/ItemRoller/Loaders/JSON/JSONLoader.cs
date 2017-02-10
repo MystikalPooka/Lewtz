@@ -5,9 +5,9 @@ using ItemRoller.Data_Structure;
 using System.IO;
 using Newtonsoft.Json.Linq;
 
-namespace ItemRoller.Loaders.JSON
+namespace ItemRoller.Loaders
 {
-    class JSONLoader : IDatabaseLoader
+    public class JSONLoader : IDatabaseLoader
     {
         private string _filename;
         private Table tableToLoad;
