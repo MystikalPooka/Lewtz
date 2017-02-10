@@ -9,9 +9,9 @@ namespace ItemRoller
     {
         static void Main(string[] args)
         {
-            TableRepository.LoadSingleFile(@"..\..\Tables\treasure table.json", new JSONLoader());
-            TableRepository.LoadSingleFile(@"..\..\Tables\magic base.json", new JSONLoader());
-            TableRepository.LoadAllMatchingStringFromDirectory(@"..\..\Tables", @"*special abilities*", new JSONLoader());
+            TableRepository.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
+            TableRepository.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
+            TableRepository.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
             var baseTable = TableRepository.GetTableFromString("treasure table");
 
             TableRepository.GetTableFromString("armor special abilities").Accept(new PrintEntireTreeVisitor());
@@ -29,6 +29,7 @@ namespace ItemRoller
 
             foreach (Component comp in loot.GetLootBag())
             {
+                Console.WriteLine("--------------------------------------");
                 Console.WriteLine(comp);
                 Console.WriteLine("--------------------------------------");
             }

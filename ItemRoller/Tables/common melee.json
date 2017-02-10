@@ -1,0 +1,130 @@
+[
+	{
+	  "name":"dagger",
+	  "book":"PHB116",
+	  "cost":200,
+	  "probability":4,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"greataxe",
+	  "book":"PHB118",
+	  "cost":2000,
+	  "probability":14,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"greatsword",
+	  "book":"PHB118",
+	  "cost":5000,
+	  "probability":24,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"kama",
+	  "book":"PHB118",
+	  "cost":200,
+	  "probability":28,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"longsword",
+	  "book":"PHB119",
+	  "cost":1500,
+	  "probability":41,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"mace, light",
+	  "book":"PHB119",
+	  "cost":500,
+	  "probability":45,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"mace, heavy",
+	  "book":"PHB119",
+	  "cost":1200,
+	  "probability":50,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"nunchaku",
+	  "book":"PHB120",
+	  "cost":200,
+	  "probability":54,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"quarterstaff",
+	  "book":"PHB120",
+	  "cost":0,
+	  "probability":57,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"rapier",
+	  "book":"PHB120",
+	  "cost":2000,
+	  "probability":61,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"scimitar",
+	  "book":"PHB120",
+	  "cost":1500,
+	  "probability":66,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"shortspear",
+	  "book":"PHB121",
+	  "cost":100,
+	  "probability":70,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"siangham",
+	  "book":"PHB121",
+	  "cost":300,
+	  "probability":74,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"sword, bastard",
+	  "book":"PHB121",
+	  "cost":3500,
+	  "probability":84,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"sword, short",
+	  "book":"PHB121",
+	  "cost":1000,
+	  "probability":89,
+	  "type":"item",
+	  "item types":"Weapon"
+	},
+	{
+	  "name":"waraxe, dwarven",
+	  "book":"PHB121",
+	  "cost":3000,
+	  "probability":100,
+	  "type":"item",
+	  "item types":"Weapon"
+	}
+]
