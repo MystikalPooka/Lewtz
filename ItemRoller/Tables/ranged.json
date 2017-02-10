@@ -1,0 +1,137 @@
+[
+	{
+	  "name":"ammunition",
+	  "book":"DMG223",
+	  "probability":10,
+	  "type":"table",
+	  "item types": "Ammunition"
+	},
+	{
+	  "name":"axe, throwing",
+	  "book":"PHB114",
+	  "cost":800,
+	  "probability":20,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"crossbow, heavy",
+	  "book":"PHB115",
+	  "cost":5000,
+	  "probability":25,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"crossbow, light",
+	  "book":"PHB115",
+	  "cost":3500,
+	  "probability":35,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"dart",
+	  "book":"PHB116",
+	  "cost":50,
+	  "probability":39,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"javelin",
+	  "book":"PHB118",
+	  "cost":100,
+	  "probability":41,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"shortbow",
+	  "book":"PHB120",
+	  "cost":3000,
+	  "probability":46,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"shortbow, composite (+0 str)",
+	  "book":"PHB120",
+	  "cost":7500,
+	  "probability":51,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"shortbow, composite (+1 str)",
+	  "book":"PHB120",
+	  "cost":15000,
+	  "probability":56,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"shortbow, composite (+2 str)",
+	  "book":"PHB120",
+	  "cost":22500,
+	  "probability":61,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"sling",
+	  "book":"PHB121",
+	  "cost":0,
+	  "probability":65,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"longbow",
+	  "book":"PHB118",
+	  "cost":7500,
+	  "probability":75,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"longbow, composite (+0 str)",
+	  "book":"PHB119",
+	  "cost":10000,
+	  "probability":80,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"longbow, composite (+1 str)",
+	  "book":"PHB119",
+	  "cost":20000,
+	  "probability":85,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"longbow, composite (+2 str)",
+	  "book":"PHB119",
+	  "cost":30000,
+	  "probability":90,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"longbow, composite (+3 str)",
+	  "book":"PHB119",
+	  "cost":40000,
+	  "probability":95,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	},
+	{
+	  "name":"longbow, composite (+4 str)",
+	  "book":"PHB119",
+	  "cost":50000,
+	  "probability":100,
+	  "type":"item",
+	  "item types":"Ranged_Weapon"
+	}
+]
