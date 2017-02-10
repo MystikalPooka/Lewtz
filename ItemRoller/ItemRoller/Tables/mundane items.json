@@ -1,0 +1,9 @@
+[
+	{
+	  "name":"weapons",
+	  "book":"DMG222",
+	  "probability":100,
+	  "type":"table",
+	  "item types": "Weapon"
+	}
+]
