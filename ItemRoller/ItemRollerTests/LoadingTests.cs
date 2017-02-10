@@ -9,17 +9,13 @@ namespace ItemRollerTests
     public class LoadingTests
     {
         [TestMethod]
-        public void TestLoad()
+        public void LoadTables()
         {
-            TableRepository.LoadSingleFile(@"..\..\Tables\treasure table.json", new JSONLoader());
-            TableRepository.LoadSingleFile(@"..\..\Tables\magic base.json", new JSONLoader());
-            TableRepository.LoadAllMatchingStringFromDirectory(@"..\..\Tables", @"*special abilities*", new JSONLoader());
+            TableRepository.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
+            TableRepository.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
+            TableRepository.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
+
             var baseTable = TableRepository.GetTableFromString("treasure table");
-
-            TableRepository.GetTableFromString("armor special abilities").Accept(new PrintEntireTreeVisitor());
-            TableRepository.GetTableFromString("shield special abilities").Accept(new PrintEntireTreeVisitor());
-
-
             Assert.IsNotNull(baseTable);
         }
     }

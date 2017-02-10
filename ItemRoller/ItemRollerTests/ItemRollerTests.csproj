@@ -6,8 +6,8 @@
     <ProjectGuid>{CE0592B9-609F-4F2E-B812-4567C70352AE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LewtzTests</RootNamespace>
-    <AssemblyName>LewtzTests</AssemblyName>
+    <RootNamespace>ItemRollerTests</RootNamespace>
+    <AssemblyName>ItemRollerTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -59,9 +59,6 @@
       <Project>{7a5a3856-3447-48f5-97b2-e86a197f9098}</Project>
       <Name>ItemRoller</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
