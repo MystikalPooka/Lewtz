@@ -95,7 +95,7 @@ namespace ItemRoller.Data_Structure
 
         public override string ToString()
         {
-            var abilityString = appliedAbilities.Count > 0 ? "\r\n-  Abilities:  - \r\n\t->" + GetAbilityNames() : "";
+            var abilityString = appliedAbilities.Count > 0 ? "\r\n-  Abilities:  - \r\n" + GetAbilityNames() : "";
             return base.ToString() + " " + Types.ToString() + abilityString;
         }
 
@@ -104,7 +104,7 @@ namespace ItemRoller.Data_Structure
             string abilities = "";
             foreach(Component ability in appliedAbilities)
             {
-                abilities += ability + "\r\n";
+                abilities += " -> " + ability + "\r\n";
             }
             return abilities;
         }
