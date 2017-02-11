@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ItemRoller.Visitors
 {
-    class GetLootVisitor : IVisitor
+    public class LootVisitor : IVisitor
     {
         private IList<Component> lootBag;
         public List<Component> GetLootBag()
@@ -14,7 +14,7 @@ namespace ItemRoller.Visitors
         }
 
         private static Random rand = new Random();
-        public GetLootVisitor()
+        public LootVisitor()
         {
             lootBag = new List<Component>();
         }

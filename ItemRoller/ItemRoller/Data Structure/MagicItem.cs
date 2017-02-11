@@ -36,7 +36,7 @@ namespace ItemRoller.Data_Structure
             var buildTable = TableRepository.GetTypeSortedTableFromString("magic base", Types);
             if (buildTable.Name != "Table Not Found" && buildTable != null)
             {
-                var abilitiesVisitor = new GetLootVisitor();
+                var abilitiesVisitor = new LootVisitor();
                 buildTable.Accept(abilitiesVisitor);
 
                 buildTable.RollCount = 1;
@@ -74,7 +74,7 @@ namespace ItemRoller.Data_Structure
 
                 if(rollTable != null)
                 {
-                    var abilities = new GetLootVisitor();
+                    var abilities = new LootVisitor();
                     rollTable.Accept(abilities);
                     abilitiesToAdd.AddRange(abilities.GetLootBag());
                 }

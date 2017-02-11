@@ -24,7 +24,7 @@ namespace ItemRoller
 
             Console.WriteLine("\r\n===================\r\n");
             
-            var loot = new GetLootVisitor();
+            var loot = new LootVisitor();
             baseTable.Accept(loot);
 
             foreach (Component comp in loot.GetLootBag())

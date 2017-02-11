@@ -210,3 +210,5 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/ItemRoller/Tables_Old
+/ItemRoller/NeededFilesTrimmed.txt

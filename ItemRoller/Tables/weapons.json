@@ -1,0 +1,21 @@
+[
+	{
+	  "name":"common melee",
+	  "book":"DMG222",
+	  "probability":70,
+	  "type":"table"
+	},
+	{
+	  "name":"uncommon",
+	  "book":"DMG222",
+	  "probability":75,
+	  "type":"table"
+	},
+	{
+	  "name":"ranged",
+	  "book":"DMG223",
+	  "probability":100,
+	  "type":"table"
+	}
+]
+

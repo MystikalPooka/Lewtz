@@ -1,0 +1,276 @@
+[
+	{
+	  "name":"arrow catching",
+	  "book":"DMG218",
+	  "probability_minor":20,
+	  "probability_medium":10,
+	  "probability_major":5,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":1
+	},
+	{
+	  "name":"bashing",
+	  "book":"DMG218",
+	  "probability_minor":40,
+	  "probability_medium":20,
+	  "probability_major":8,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":1
+	},
+	{
+	  "name":"blinding",
+	  "book":"DMG218",
+	  "probability_minor":50,
+	  "probability_medium":25,
+	  "probability_major":10,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":1
+	},
+	{
+	  "name":"fortification, light",
+	  "book":"DMG218",
+	  "probability_minor":75,
+	  "probability_medium":40,
+	  "probability_major":15,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":1
+	},
+	{
+	  "name":"arrow deflection",
+	  "book":"DMG218",
+	  "probability_minor":92,
+	  "probability_medium":50,
+	  "probability_major":20,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":2
+	},
+	{
+	  "name":"animated",
+	  "book":"DMG218",
+	  "probability_minor":97,
+	  "probability_medium":5,
+	  "probability_major":25,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":2
+	},
+	{
+	  "name":"spell resistance(13)",
+	  "book":"DMG218",
+	  "probability_minor":99,
+	  "probability_medium":59,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":2
+	},
+	{
+	  "name":"acid resistance",
+	  "book":"DMG218",
+	  "probability_medium":63,
+	  "probability_major":28,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":1800000
+	},
+	{
+	  "name":"cold resistance",
+	  "book":"DMG218",
+	  "probability_medium":67,
+	  "probability_major":31,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":1800000
+	},
+	{
+	  "name":"electricity resistance",
+	  "book":"DMG218",
+	  "probability_medium":71,
+	  "probability_major":34,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":1800000
+	},
+	{
+	  "name":"fire resistance",
+	  "book":"DMG218",
+	  "probability_medium":75,
+	  "probability_major":37,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":1800000
+	},
+	{
+	  "name":"sonic resistance",
+	  "book":"DMG218",
+	  "probability_medium":79,
+	  "probability_major":40,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":1800000
+	},
+	{
+	  "name":"ghost touch",
+	  "book":"DMG218",
+	  "probability_medium":85,
+	  "probability_major":46,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":3
+	},
+	{
+	  "name":"fortification, moderate",
+	  "book":"DMG218",
+	  "probability_medium":95,
+	  "probability_major":56,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":3
+	},
+	{
+	  "name":"spell resistance(15)",
+	  "book":"DMG218",
+	  "probability_medium":98,
+	  "probability_major":58,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":3
+	},
+	{
+	  "name":"wild",
+	  "book":"DMG218",
+	  "probability_medium":99,
+	  "probability_major":59,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":3
+	},
+	{
+	  "name":"acid resistance, improved",
+	  "book":"DMG218",
+	  "probability_major":64,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":4200000
+	},
+	{
+	  "name":"cold resistance, improved",
+	  "book":"DMG218",
+	  "probability_major":69,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":4200000
+	},
+	{
+	  "name":"electricity resistance, improved",
+	  "book":"DMG218",
+	  "probability_major":74,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":4200000
+	},
+	{
+	  "name":"fire resistance, improved",
+	  "book":"DMG218",
+	  "probability_major":79,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":4200000
+	},
+	{
+	  "name":"sonic resistance, improved",
+	  "book":"DMG218",
+	  "probability_major":84,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":4200000
+	},
+	{
+	  "name":"spell resistance (17)",
+	  "book":"DMG218",
+	  "probability_major":86,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":4
+	},
+	{
+	  "name":"undead controlling",
+	  "book":"DMG218",
+	  "probability_major":87,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":4
+	},
+	{
+	  "name":"fortification, heavy",
+	  "book":"DMG218",
+	  "probability_major":91,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":4
+	},
+	{
+	  "name":"reflecting",
+	  "book":"DMG218",
+	  "probability_major":93,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":5
+	},
+	{
+	  "name":"spell resistance (19)",
+	  "book":"DMG218",
+	  "probability_major":94,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "bonus":5
+	},
+	{
+	  "name":"acid resistance, greater",
+	  "book":"DMG218",
+	  "probability_major":96,
+	  "type":"ability",
+	  "item_types":"Ability, Shield",
+	  "cost":6600000
+	},
+	{
+	  "name":"cold resistance, greater",
+	  "book":"DMG218",
+	  "probability_major":97,
+	  "type":"ability",
+	  "cost":6600000
+	},
+	{
+	  "name":"electricty resistance, greater",
+	  "book":"DMG218",
+	  "probability_major":98,
+	  "type":"ability",
+	  "cost":6600000
+	},
+	{
+	  "name":"fire resistance, greater",
+	  "book":"DMG218",
+	  "type":"ability",
+	  "probability_major":98,
+	  "cost":6600000
+	},
+	{
+	  "name":"sonic resistance, greater",
+	  "book":"DMG218",
+	  "probability_major":99,
+	  "type":"ability",
+	  "cost":6600000
+	},
+	{
+	  "name":"roll again twice",
+	  "book":"DMG218",
+	  "probability_minor":100,
+	  "probability_medium":100,
+	  "probability_major":100,
+	  "type":"ability"
+	}
+]
