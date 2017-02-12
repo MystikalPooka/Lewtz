@@ -24,19 +24,19 @@ namespace ItemRoller.Data_Structure
             Types |= ItemTypes.Magic;
         }
 
-        public void Build()
+        public void Build(TableRepository tableRepo)
         {
-            RollAllAbilities();
+            RollAllAbilities(tableRepo);
             SetItemTypesFromAppliedAbilities();
-            RollSpecialAbilities();
+            RollSpecialAbilities(tableRepo);
         }
 
-        private void RollAllAbilities()
+        private void RollAllAbilities(TableRepository tableRepo)
         {
-            var buildTable = TableRepository.GetTypeSortedTableFromString("magic base", Types);
+            var buildTable = tableRepo.GetTypeSortedTableByName("magic base", Types);
             if (buildTable.Name != "Table Not Found" && buildTable != null)
             {
-                var abilitiesVisitor = new LootVisitor();
+                var abilitiesVisitor = new LootVisitor(tableRepo);
                 buildTable.Accept(abilitiesVisitor);
 
                 buildTable.RollCount = 1;
@@ -57,7 +57,7 @@ namespace ItemRoller.Data_Structure
             }
         }
 
-        private void RollSpecialAbilities()
+        private void RollSpecialAbilities(TableRepository tableRepo)
         {
             var abilitiesToRoll =
                                 from ability in appliedAbilities
@@ -70,11 +70,11 @@ namespace ItemRoller.Data_Structure
             {
                 var typeToRoll = Types & ~(ItemTypes.Magic | ItemTypes.Magic_Major | ItemTypes.Magic_Medium | ItemTypes.Magic_Minor);
                 var typeString = typeToRoll.ToString().ToLower() + " special abilities";
-                var rollTable = TableRepository.GetTypeSortedTableFromString(typeString, Types);
+                var rollTable = tableRepo.GetTableByName(typeString);
 
                 if(rollTable != null)
                 {
-                    var abilities = new LootVisitor();
+                    var abilities = new LootVisitor(tableRepo);
                     rollTable.Accept(abilities);
                     abilitiesToAdd.AddRange(abilities.GetLootBag());
                 }

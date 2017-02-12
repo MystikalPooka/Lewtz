@@ -13,10 +13,13 @@ namespace ItemRoller.Visitors
             return (List<Component>)lootBag;
         }
 
+        private TableRepository tableRepositoryContext;
+
         private static Random rand = new Random();
-        public LootVisitor()
+        public LootVisitor(TableRepository tableRepo)
         {
             lootBag = new List<Component>();
+            tableRepositoryContext = tableRepo;
         }
 
         public void Visit(Table table)
@@ -59,7 +62,7 @@ namespace ItemRoller.Visitors
         public void Visit(MagicItem item)
         {
             var itemToBuild = item.Clone() as MagicItem;
-            itemToBuild.Build();
+            itemToBuild.Build(tableRepositoryContext);
             lootBag.Add(itemToBuild);
         }
 

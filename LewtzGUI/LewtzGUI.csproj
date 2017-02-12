@@ -56,6 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data Access\TableRepository.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -98,9 +99,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data Access\" />
     <Folder Include="Model\" />
     <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ItemRoller\ItemRoller\ItemRoller.csproj">
+      <Project>{7A5A3856-3447-48F5-97B2-E86A197F9098}</Project>
+      <Name>ItemRoller</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,30 +8,31 @@ namespace ItemRollerTests
     [TestClass]
     public class LoadingTests
     {
-        Table baseTable;
+        TableRepository BaseRepo;
 
         [TestInitialize]
         public void TestInitialize()
         {
-            TableRepository.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
-            TableRepository.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
-            TableRepository.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
+            BaseRepo = new TableRepository();
+            var loader = new JSONLoader();
 
-            baseTable = TableRepository.GetTableFromString("treasure table");
+            BaseRepo.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
+            BaseRepo.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
+            BaseRepo.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
         }
 
         [TestMethod]
-        public void BaseTableIsNotNull()
+        public void RepositoryIsNotEmpty()
         {
-            Assert.IsNotNull(baseTable);
+            var tables = BaseRepo.GetTables();
+            Assert.IsNotNull(tables);
         }
 
         [TestMethod]
         public void RollingLootReturnsItems()
         {
-            var lootBag = new LootVisitor();
+            var lootBag = new LootVisitor(BaseRepo);
             Assert.IsNotNull(lootBag);
-            
         }
     }
 }

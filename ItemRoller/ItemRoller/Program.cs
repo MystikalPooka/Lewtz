@@ -9,13 +9,15 @@ namespace ItemRoller
     {
         static void Main(string[] args)
         {
-            TableRepository.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
-            TableRepository.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
-            TableRepository.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
-            var baseTable = TableRepository.GetTableFromString("treasure table");
+            var tableRepo = new TableRepository();
 
-            TableRepository.GetTableFromString("armor special abilities").Accept(new PrintEntireTreeVisitor());
-            TableRepository.GetTableFromString("shield special abilities").Accept(new PrintEntireTreeVisitor());
+            tableRepo.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
+            tableRepo.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
+            tableRepo.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
+            var baseTable = tableRepo.GetTableByName("treasure table");
+
+            tableRepo.GetTableByName("armor special abilities").Accept(new PrintEntireTreeVisitor());
+            tableRepo.GetTableByName("shield special abilities").Accept(new PrintEntireTreeVisitor());
 
             baseTable.Accept(new PrintEntireTreeVisitor());
             Console.WriteLine("\r\n===================\r\n");
@@ -24,7 +26,7 @@ namespace ItemRoller
 
             Console.WriteLine("\r\n===================\r\n");
             
-            var loot = new LootVisitor();
+            var loot = new LootVisitor(tableRepo);
             baseTable.Accept(loot);
 
             foreach (Component comp in loot.GetLootBag())

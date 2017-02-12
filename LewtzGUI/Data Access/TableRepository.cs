@@ -43,18 +43,7 @@ namespace ItemRoller.Data_Structure
 
         public Table GetTableByName(string name)
         {
-            if (tableDict.ContainsKey(name))
-            {
-                return (Table)tableDict[name].Clone();
-            }
-            else return new Table("Table Not Found");
-        }
-
-        public Table GetTypeSortedTableByName(string tableName, ItemTypes types)
-        {
-            var table = GetTableByName(tableName);
-            table.RemoveChildrenNotMatchingTypes(types);
-            return table;
+            return GetTables().Where(p => p.Name.Equals(name)).First();
         }
     }
 }
