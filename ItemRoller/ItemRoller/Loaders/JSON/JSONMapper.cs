@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace ItemRoller.Loaders
 {
-    public class JSONLoader : IDatabaseLoader
+    public class JSONLoader : IDataMapper
     {
         private string _filename;
         private Table tableToLoad;

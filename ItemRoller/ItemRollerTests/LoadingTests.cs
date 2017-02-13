@@ -16,9 +16,9 @@ namespace ItemRollerTests
             BaseRepo = new TableRepository();
             var loader = new JSONLoader();
 
-            BaseRepo.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
-            BaseRepo.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
-            BaseRepo.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
+            BaseRepo.LoadSingleFile(@"..\..\..\Tables\treasure table.json", loader);
+            BaseRepo.LoadSingleFile(@"..\..\..\Tables\magic base.json", loader);
+            BaseRepo.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", loader);
         }
 
         [TestMethod]
@@ -33,6 +33,7 @@ namespace ItemRollerTests
         {
             var lootBag = new LootVisitor(BaseRepo);
             Assert.IsNotNull(lootBag);
+            CollectionAssert.AllItemsAreNotNull(lootBag.GetLootBag());
         }
     }
 }

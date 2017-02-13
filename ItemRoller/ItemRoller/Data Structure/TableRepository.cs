@@ -13,7 +13,7 @@ namespace ItemRoller.Data_Structure
     {
         public ConcurrentDictionary<string, Table> tableDict = new ConcurrentDictionary<string, Table>();
 
-        public void LoadAllMatchingStringFromDirectory(string directory, string searchString, IDatabaseLoader loader)
+        public void LoadAllMatchingStringFromDirectory(string directory, string searchString, IDataMapper loader)
         {
             foreach (string filename in Directory.EnumerateFiles(directory, searchString))
             {
@@ -21,7 +21,7 @@ namespace ItemRoller.Data_Structure
             }
         }
 
-        public void LoadSingleFile(string filename, IDatabaseLoader loader)
+        public void LoadSingleFile(string filename, IDataMapper loader)
         {
             AddTable(loader.LoadTableFromFile(filename));
         }

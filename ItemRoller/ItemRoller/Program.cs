@@ -11,10 +11,11 @@ namespace ItemRoller
         static void Main(string[] args)
         {
             var tableRepo = new TableRepository();
+            var loader = new JSONLoader();
 
-            tableRepo.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
-            tableRepo.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
-            tableRepo.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
+            tableRepo.LoadSingleFile(@"..\..\..\Tables\treasure table.json", loader);
+            tableRepo.LoadSingleFile(@"..\..\..\Tables\magic base.json", loader);
+            tableRepo.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", loader);
             var baseTable = tableRepo.GetTableByName("treasure table");
 
             tableRepo.GetTableByName("armor special abilities").Accept(new PrintEntireTreeVisitor());

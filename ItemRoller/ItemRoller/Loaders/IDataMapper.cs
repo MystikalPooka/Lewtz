@@ -2,7 +2,7 @@
 
 namespace ItemRoller.Loaders
 {
-    public interface IDatabaseLoader
+    public interface IDataMapper
     {
         Table LoadTableFromFile(string filename);
     }
