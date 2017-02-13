@@ -13,23 +13,23 @@ namespace LewtzGUI.VML
     //
     public static class ViewModelLocator
     {
-        public static bool GetViewModel(DependencyObject obj)
+        public static bool GetAutoViewModel(DependencyObject obj)
         {
-            return (bool)obj.GetValue(ViewModelProperty);
+            return (bool)obj.GetValue(AutoViewModelProperty);
         }
 
-        public static void SetUpViewModel(DependencyObject obj, bool value)
+        public static void SetAutoViewModel(DependencyObject obj, bool value)
         {
-            obj.SetValue(ViewModelProperty, value);
+            obj.SetValue(AutoViewModelProperty, value);
         }
 
-        public static readonly DependencyProperty ViewModelProperty =       
-            DependencyProperty.RegisterAttached("ViewModel", typeof(bool),
+        public static readonly DependencyProperty AutoViewModelProperty =       
+            DependencyProperty.RegisterAttached("AutoViewModel", typeof(bool),
                                                 typeof(ViewModelLocator), new
-                                                PropertyMetadata(false, ViewModelChanged));
+                                                PropertyMetadata(false, AutoViewModelChanged));
         
 
-        public static void ViewModelChanged(DependencyObject dObj, DependencyPropertyChangedEventArgs)
+        public static void AutoViewModelChanged(DependencyObject dObj, DependencyPropertyChangedEventArgs e)
         {
             if (DesignerProperties.GetIsInDesignMode(dObj)) return;
 
@@ -42,7 +42,7 @@ namespace LewtzGUI.VML
             var viewModelType = Type.GetType(viewModelTypeName);
             var viewModel = Activator.CreateInstance(viewModelType);
 
-            ((FrameworkElement)dObj).DataContext = viewModel;s
+            ((FrameworkElement)dObj).DataContext = viewModel;
         }
     }
 }
