@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using ItemRoller.Data_Structure;
 using System.Linq;
+using System.Collections.ObjectModel;
 
 namespace ItemRoller.Visitors
 {
@@ -11,6 +12,11 @@ namespace ItemRoller.Visitors
         public List<Component> GetLootBag()
         {
             return (List<Component>)lootBag;
+        }
+
+        public ObservableCollection<Component> GetObservableLootBag()
+        {
+            return (ObservableCollection<Component>)lootBag;
         }
 
         private TableRepository tableRepositoryContext;

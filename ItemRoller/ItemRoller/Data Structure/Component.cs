@@ -25,7 +25,9 @@ namespace ItemRoller.Data_Structure
 
         public override string ToString()
         {
-            return GetType().Name + ": " + Name + " | Prob: " + Probability + " | Book: " + Book;
+            return GetType().Name + ": " + Name + "\n" +
+                             "  ->Probability: " + Probability + "\n" + 
+                             "  ->Book: " + Book;
         }
     }
 }

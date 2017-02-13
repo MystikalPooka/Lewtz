@@ -2,6 +2,7 @@
 using ItemRoller.Loaders;
 using ItemRoller.Visitors;
 using System;
+using System.Text;
 
 namespace ItemRoller
 {
@@ -29,12 +30,15 @@ namespace ItemRoller
             var loot = new LootVisitor(tableRepo);
             baseTable.Accept(loot);
 
+
+            StringBuilder lootStr = new StringBuilder("");
             foreach (Component comp in loot.GetLootBag())
             {
-                Console.WriteLine("--------------------------------------");
-                Console.WriteLine(comp);
-                Console.WriteLine("--------------------------------------");
+                lootStr.AppendLine("--------------------------------------");
+                lootStr.AppendLine(comp.ToString());
+                lootStr.AppendLine("--------------------------------------");
             }
+            Console.WriteLine(lootStr);
             Console.ReadLine();
         }
     }
