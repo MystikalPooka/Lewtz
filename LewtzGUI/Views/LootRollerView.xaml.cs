@@ -18,9 +18,9 @@ namespace LewtzGUI.Views
     /// <summary>
     /// Interaction logic for ItemRollerView.xaml
     /// </summary>
-    public partial class ItemRollerView : UserControl
+    public partial class LootRollerView : UserControl
     {
-        public ItemRollerView()
+        public LootRollerView()
         {
             InitializeComponent();
         }
