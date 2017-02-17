@@ -1,6 +1,7 @@
 ﻿using ItemRoller.Data_Structure;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using ItemRoller.Repository;
 
 namespace LewtzGUI.ViewModels
 {
