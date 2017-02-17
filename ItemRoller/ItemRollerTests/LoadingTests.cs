@@ -1,5 +1,6 @@
 ﻿using ItemRoller.Data_Structure;
 using ItemRoller.Loaders;
+using ItemRoller.Repository;
 using ItemRoller.Visitors;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

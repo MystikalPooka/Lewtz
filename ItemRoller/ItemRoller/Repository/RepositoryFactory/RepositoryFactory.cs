@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ItemRoller.Repository.RepositoryFactory
 {
-    public static class RepositoryFactory
+    public class RepositoryFactory
     {
-        public static IRepository GetRepository(string type, IDataMapper mapper, IRepositoryLoader loader)
+        public IRepository GetRepository(string type, IDataMapper mapper, IRepositoryLoader loader)
         {
+
+
             return new TableRepository();
         }
     }
