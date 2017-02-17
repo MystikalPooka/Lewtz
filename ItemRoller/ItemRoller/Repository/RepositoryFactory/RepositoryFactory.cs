@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ItemRoller.Repository
+namespace ItemRoller.Repository.RepositoryFactory
 {
     public static class RepositoryFactory
     {

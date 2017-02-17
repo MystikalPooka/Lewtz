@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using ItemRoller.Data_Structure;
 using System.Linq;
 using System.Collections.ObjectModel;
+using ItemRoller.Repository;
 
 namespace ItemRoller.Visitors
 {

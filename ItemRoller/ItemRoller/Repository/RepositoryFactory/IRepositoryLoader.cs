@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ItemRoller.Repository.RepositoryFactory
 {
-    public interface IRespositoryLoader
+    public interface IRepositoryLoader
     {
     }
 }
