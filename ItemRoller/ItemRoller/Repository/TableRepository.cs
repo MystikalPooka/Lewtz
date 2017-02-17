@@ -1,14 +1,14 @@
-﻿using ItemRoller.Loaders;
+﻿using ItemRoller.Data_Structure;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace ItemRoller.Data_Structure
+namespace ItemRoller.Repository
 {
-    public class TableRepository
+    public class TableRepository : IRepository
     {
-        public ConcurrentDictionary<string, Table> tableDict = new ConcurrentDictionary<string, Table>();
+        private ConcurrentDictionary<string, Table> tableDict = new ConcurrentDictionary<string, Table>();
 
         public void LoadAllMatchingStringFromDirectory(string directory, string searchString, IDataMapper loader)
         {

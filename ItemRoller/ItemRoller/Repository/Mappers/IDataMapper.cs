@@ -1,6 +1,6 @@
 ﻿using ItemRoller.Data_Structure;
 
-namespace ItemRoller.Loaders
+namespace ItemRoller.Repository
 {
     public interface IDataMapper
     {

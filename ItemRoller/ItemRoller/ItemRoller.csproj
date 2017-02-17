@@ -73,9 +73,12 @@
     <Compile Include="Data Structure\ItemTypes.cs" />
     <Compile Include="Data Structure\Table.cs" />
     <Compile Include="Data Structure\MagicItem.cs" />
-    <Compile Include="Data Structure\TableRepository.cs" />
-    <Compile Include="Loaders\IDataMapper.cs" />
-    <Compile Include="Loaders\JSON\JSONMapper.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\RepositoryFactory\IRespositoryLoader.cs" />
+    <Compile Include="Repository\RepositoryFactory\RepositoryFactory.cs" />
+    <Compile Include="Repository\TableRepository.cs" />
+    <Compile Include="Repository\Mappers\IDataMapper.cs" />
+    <Compile Include="Repository\Mappers\JSON\JSONMapper.cs" />
     <Compile Include="Visitors\IVisitable.cs" />
     <Compile Include="Visitors\IVisitor.cs" />
     <Compile Include="Program.cs" />
@@ -99,6 +102,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
