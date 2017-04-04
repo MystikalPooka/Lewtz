@@ -20,7 +20,7 @@ namespace ItemRoller.Repository
 
         public void LoadSingleFile(string filename, IDataMapper loader)
         {
-            AddTable(loader.LoadTableFromFile(filename));
+            AddTable(loader.Load(filename));
         }
 
         public void AddTable(Table table)

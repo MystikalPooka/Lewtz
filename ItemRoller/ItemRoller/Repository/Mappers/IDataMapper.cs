@@ -4,6 +4,7 @@ namespace ItemRoller.Repository
 {
     public interface IDataMapper
     {
-        Table LoadTableFromFile(string filename);
+        void Save(string filename);
+        Table Load(string filename);
     }
 }

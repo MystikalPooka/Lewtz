@@ -11,7 +11,7 @@ namespace ItemRoller.Repository
     {
         private string _filename;
         private Table tableToLoad;
-        public Table LoadTableFromFile(string filename)
+        public Table Load(string filename)
         {
             try
             {
@@ -36,7 +36,6 @@ namespace ItemRoller.Repository
                             loadedComponent.ParentTable = tableToLoad;
                             loadedComponent.Probability = (int)prob.Value;
                             
-
                             tableToLoad.Add(loadedComponent);
                             tableToLoad.SortTable();
                         }
@@ -71,7 +70,7 @@ namespace ItemRoller.Repository
                     var tableName = compToAdd.Name.Replace(", roll again", "");
                     string newFilename = _filename.Replace(tableToLoad.Name.ToLower(), tableName);
                     //new JSONLoader().LoadTableFromFile(newFilename, compToAdd as Table);
-                    compToAdd = new JSONLoader().LoadTableFromFile(newFilename);
+                    compToAdd = new JSONLoader().Load(newFilename);
                     if(compToAdd == null)
                     {
                         Console.WriteLine("ERROR: Table is null!" + tableName);

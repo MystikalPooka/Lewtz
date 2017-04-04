@@ -74,9 +74,6 @@
     <Compile Include="Data Structure\Table.cs" />
     <Compile Include="Data Structure\MagicItem.cs" />
     <Compile Include="Repository\IRepository.cs" />
-    <Compile Include="Repository\Loaders\IRepositoryLoader.cs" />
-    <Compile Include="Repository\RepositoryFactory\IRepositoryLoader.cs" />
-    <Compile Include="Repository\RepositoryFactory\RepositoryFactory.cs" />
     <Compile Include="Repository\TableRepository.cs" />
     <Compile Include="Repository\Mappers\IDataMapper.cs" />
     <Compile Include="Repository\Mappers\JSON\JSONMapper.cs" />
