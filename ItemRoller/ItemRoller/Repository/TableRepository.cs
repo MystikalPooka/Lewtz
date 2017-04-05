@@ -6,8 +6,9 @@ using System.Linq;
 
 namespace ItemRoller.Repository
 {
-    public class TableRepository : IRepository
+    public class TableRepository
     {
+        //SHOULD BE CRUD
         private ConcurrentDictionary<string, Table> tableDict = new ConcurrentDictionary<string, Table>();
 
         public void LoadAllMatchingStringFromDirectory(string directory, string searchString, IDataMapper loader)
