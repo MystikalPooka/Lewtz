@@ -1,0 +1,305 @@
+[
+  {
+	  "name":"axe, orc double",
+	  "book":"PHB115",
+	  "cost":6000,
+	  "probability":3,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"battleaxe",
+	  "book":"PHB115",
+	  "cost":1000,
+	  "probability":7,
+	  "type":"item",
+	  "item types":"melee_weapon,magic"
+  },
+  {
+	  "name":"chain, spiked",
+	  "book":"PHB115",
+	  "cost":2500,
+	  "probability":10,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"club",
+	  "book":"PHB115",
+	  "cost":0,
+	  "probability":12,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"crossbow, hand",
+	  "book":"PHB115",
+	  "cost":10000,
+	  "probability":16,
+	  "type":"item",
+	  "item types":"ranged_weapon"
+  },
+  {
+	  "name":"crossbow, repeating light",
+	  "book":"PHB116",
+	  "cost":25000,
+	  "probability":19,
+	  "type":"item",
+	  "item types":"ranged_weapon"
+  },
+  {
+	  "name":"dagger, punching",
+	  "book":"PHB116",
+	  "cost":200,
+	  "probability":21,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"falchion",
+	  "book":"PHB117",
+	  "cost":7500,
+	  "probability":23,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"flail, dire",
+	  "book":"PHB117",
+	  "cost":9000,
+	  "probability":26,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"flail, heavy",
+	  "book":"PHB117",
+	  "cost":1500,
+	  "probability":31,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"flail, light",
+	  "book":"PHB117",
+	  "cost":800,
+	  "probability":35,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"gauntlet",
+	  "book":"PHB117",
+	  "cost":200,
+	  "probability":37,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"gauntlet, spiked",
+	  "book":"PHB118",
+	  "cost":500,
+	  "probability":39,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"glaive",
+	  "book":"PHB118",
+	  "cost":800,
+	  "probability":41,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"greatclub",
+	  "book":"PHB118",
+	  "cost":500,
+	  "probability":43,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"guisarme",
+	  "book":"PHB118",
+	  "cost":900,
+	  "probability":45,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"halberd",
+	  "book":"PHB118",
+	  "cost":1000,
+	  "probability":48,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"halfspear",
+	  "book":"PHB101(3.0)",
+	  "cost":100,
+	  "probability":51,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"hammer, gnome hooked",
+	  "book":"PHB118",
+	  "cost":2000,
+	  "probability":54,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"hammer, light",
+	  "book":"PHB118",
+	  "cost":100,
+	  "probability":56,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"handaxe",
+	  "book":"PHB118",
+	  "cost":600,
+	  "probability":58,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"kukri",
+	  "book":"PHB118",
+	  "cost":800,
+	  "probability":61,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"lance",
+	  "book":"PHB118",
+	  "cost":1000,
+	  "probability":64,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"longspear",
+	  "book":"PHB119",
+	  "cost":500,
+	  "probability":67,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"morningstar",
+	  "book":"PHB119",
+	  "cost":800,
+	  "probability":70,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"net",
+	  "book":"PHB119",
+	  "cost":2000,
+	  "probability":72,
+	  "type":"item",
+  },
+  {
+	  "name":"pick, heavy",
+	  "book":"PHB120",
+	  "cost":800,
+	  "probability":74,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"pick, light",
+	  "book":"PHB120",
+	  "cost":400,
+	  "probability":76,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"ranseur",
+	  "book":"PHB120",
+	  "cost":1000,
+	  "probability":78,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"sap",
+	  "book":"PHB120",
+	  "cost":100,
+	  "probability":80,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"scythe",
+	  "book":"PHB120",
+	  "cost":1800,
+	  "probability":82,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"shuriken",
+	  "book":"PHB121",
+	  "cost":100,
+	  "probability":84,
+	  "type":"item",
+	  "item types":"ranged_weapon"
+  },
+  {
+	  "name":"sickle",
+	  "book":"PHB121",
+	  "cost":600,
+	  "probability":86,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"sword, two-bladed",
+	  "book":"PHB121",
+	  "cost":10000,
+	  "probability":89,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"trident",
+	  "book":"PHB121",
+	  "cost":1500,
+	  "probability":91,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"urgrosh, dwarven",
+	  "book":"PHB121",
+	  "cost":5000,
+	  "probability":94,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"warhammer",
+	  "book":"PHB121",
+	  "cost":1200,
+	  "probability":97,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  },
+  {
+	  "name":"whip",
+	  "book":"PHB121",
+	  "cost":100,
+	  "probability":100,
+	  "type":"item",
+	  "item types":"melee_weapon"
+  }
+]

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ItemRoller.Data_Structure.Ability" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAABAAAgAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data Structure\Ability.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemRoller.Data_Structure.Component" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAAAAAAAAAAABEAAAAAIQAAAAAAAAAAEAAAAAAABA=</HashCode>
+      <FileName>Data Structure\Component.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ItemRoller.Data_Structure.Item" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data Structure\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemRoller.Data_Structure.MagicItem" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAEAAAAAAAAAEAAAASBAAAAAAgAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data Structure\MagicItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemRoller.Data_Structure.MundaneItem" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data Structure\MundaneItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemRoller.Data_Structure.Table" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIABAAAAIAAAAQEAAAABAAAAABAQAAAAIAAAAAAABA=</HashCode>
+      <FileName>Data Structure\Table.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemRoller.Data_Structure.TableRepository" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiIAAAAEAAAAAAAAAAAgAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data Structure\TableRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemRoller.Loaders.JSONLoader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAIAAAAQAAAAAAAACAAAAAAAAAQAAAEAAAAg=</HashCode>
+      <FileName>Loaders\JSON\JSONLoader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ItemRoller.Program" Collapsed="true">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemRoller.Visitors.GetLootVisitor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAQAAAAAAAAAAAAAAAAABAAAQAAAAAA=</HashCode>
+      <FileName>Visitors\GetLootVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ItemRoller.Visitors.PrintEntireTreeVisitor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitors\PrintEntireTreeVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ItemRoller.Loaders.IDatabaseLoader" Collapsed="true">
+    <Position X="9" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Loaders\IDataLoader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ItemRoller.Visitors.IVisitable" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitors\IVisitable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ItemRoller.Visitors.IVisitor" Collapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitors\IVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ItemRoller.Data_Structure.ItemTypes" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQEACYAEEAEgBAAAAAQAQEACAABooEEAAgAwEAAAA=</HashCode>
+      <FileName>Data Structure\ItemTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

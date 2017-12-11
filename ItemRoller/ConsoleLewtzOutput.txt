@@ -1,0 +1,272 @@
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\specific shield.json
+File Not Found: ..\..\Tables\potions.json
+File Not Found: ..\..\Tables\potions.json
+File Not Found: ..\..\Tables\potions.json
+File Not Found: ..\..\Tables\rings.json
+File Not Found: ..\..\Tables\rings.json
+File Not Found: ..\..\Tables\rings.json
+File Not Found: ..\..\Tables\rods.json
+File Not Found: ..\..\Tables\rods.json
+File Not Found: ..\..\Tables\rods.json
+File Not Found: ..\..\Tables\scrolls.json
+File Not Found: ..\..\Tables\scrolls.json
+File Not Found: ..\..\Tables\scrolls.json
+File Not Found: ..\..\Tables\staffs.json
+File Not Found: ..\..\Tables\staffs.json
+File Not Found: ..\..\Tables\staffs.json
+File Not Found: ..\..\Tables\wands.json
+File Not Found: ..\..\Tables\wands.json
+File Not Found: ..\..\Tables\wands.json
+File Not Found: ..\..\Tables\wondrous item.json
+File Not Found: ..\..\Tables\wondrous item.json
+File Not Found: ..\..\Tables\wondrous item.json
+\-Table: armor special abilities | Prob: 0 | Book:  | # Entries: 64
+  |-glamered  (Bonus: +0 | Cost: 270000) - DMG217
+  |-fortification, light  (Bonus: +1 | Cost: 0) - DMG217
+  |-glamered  (Bonus: +0 | Cost: 270000) - DMG217
+  |-slick, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-fortification, light  (Bonus: +1 | Cost: 0) - DMG217
+  |-shadow, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-slick  (Bonus: +0 | Cost: 375000) - DMG217
+  |-silent moves, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-shadow  (Bonus: +0 | Cost: 375000) - DMG217
+  |-acid resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-silent moves  (Bonus: +0 | Cost: 37500) - DMG217
+  |-cold resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-spell resistance (13)  (Bonus: +2 | Cost: 0) - DMG217
+  |-electricity resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-fire resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-glamered  (Bonus: +0 | Cost: 270000) - DMG217
+  |-sonic resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-slick, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-fortification, light  (Bonus: +1 | Cost: 0) - DMG217
+  |-ghost touch  (Bonus: +3 | Cost: 0) - DMG217
+  |-invulnerability  (Bonus: +3 | Cost: 0) - DMG217
+  |-shadow, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-fortification, moderate  (Bonus: +3 | Cost: 0) - DMG217
+  |-spell resistance  (Bonus: +3 | Cost: 0) - DMG217
+  |-wild  (Bonus: +3 | Cost: 0) - DMG217
+  |-slick, greater  (Bonus: +0 | Cost: 3375000) - DMG217
+  |-silent moves, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-slick  (Bonus: +0 | Cost: 375000) - DMG217
+  |-shadow, greater  (Bonus: +0 | Cost: 3375000) - DMG217
+  |-acid resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-silent moves, greater  (Bonus: +0 | Cost: 3375000) - DMG217
+  |-cold resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-acid resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG217
+  |-electricity resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-cold resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG217
+  |-fire resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-shadow  (Bonus: +0 | Cost: 375000) - DMG217
+  |-electricity resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG217
+  |-sonic resistance  (Bonus: +0 | Cost: 1800000) - DMG217
+  |-fire resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG217
+  |-ghost touch  (Bonus: +3 | Cost: 0) - DMG217
+  |-sonic resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG217
+  |-invulnerability  (Bonus: +3 | Cost: 0) - DMG217
+  |-spell resistance (17)  (Bonus: +4 | Cost: 0) - DMG217
+  |-etherealness  (Bonus: +0 | Cost: 4900000) - DMG217
+  |-fortification, moderate  (Bonus: +3 | Cost: 0) - DMG217
+  |-undead controlling  (Bonus: +0 | Cost: 4900000) - DMG217
+  |-fortification, heavy  (Bonus: +5 | Cost: 0) - DMG217
+  |-silent moves  (Bonus: +0 | Cost: 37500) - DMG217
+  |-spell resistance  (Bonus: +3 | Cost: 0) - DMG217
+  |-spell resistance (19)  (Bonus: +5 | Cost: 0) - DMG217
+  |-acid resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG217
+  |-spell resistance (13)  (Bonus: +2 | Cost: 0) - DMG217
+  |-cold resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG217
+  |-slick, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-electricity resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG217
+  |-shadow, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-fire resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG217
+  |-silent moves, improved  (Bonus: +0 | Cost: 1500000) - DMG217
+  |-wild  (Bonus: +3 | Cost: 0) - DMG217
+  |-sonic resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG217
+  |-roll again twice  (Bonus: +0 | Cost: 0) - DMG217
+  |-roll again twice  (Bonus: +0 | Cost: 0) - DMG217
+  \-roll again twice  (Bonus: +0 | Cost: 0) - DMG217
+\-Table: shield special abilities | Prob: 0 | Book:  | # Entries: 56
+  |-arrow catching  (Bonus: +1 | Cost: 0) - DMG218
+  |-animated  (Bonus: +2 | Cost: 0) - DMG218
+  |-bashing  (Bonus: +1 | Cost: 0) - DMG218
+  |-arrow catching  (Bonus: +1 | Cost: 0) - DMG218
+  |-blinding  (Bonus: +1 | Cost: 0) - DMG218
+  |-fortification, light  (Bonus: +1 | Cost: 0) - DMG218
+  |-arrow catching  (Bonus: +1 | Cost: 0) - DMG218
+  |-bashing  (Bonus: +1 | Cost: 0) - DMG218
+  |-arrow deflection  (Bonus: +2 | Cost: 0) - DMG218
+  |-blinding  (Bonus: +1 | Cost: 0) - DMG218
+  |-animated  (Bonus: +2 | Cost: 0) - DMG218
+  |-acid resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-cold resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-electricity resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-fire resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-bashing  (Bonus: +1 | Cost: 0) - DMG218
+  |-fortification, light  (Bonus: +1 | Cost: 0) - DMG218
+  |-sonic resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-ghost touch  (Bonus: +3 | Cost: 0) - DMG218
+  |-blinding  (Bonus: +1 | Cost: 0) - DMG218
+  |-arrow deflection  (Bonus: +2 | Cost: 0) - DMG218
+  |-fortification, moderate  (Bonus: +3 | Cost: 0) - DMG218
+  |-spell resistance(15)  (Bonus: +3 | Cost: 0) - DMG218
+  |-wild  (Bonus: +3 | Cost: 0) - DMG218
+  |-spell resistance(13)  (Bonus: +2 | Cost: 0) - DMG218
+  |-acid resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-acid resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG218
+  |-cold resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-cold resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG218
+  |-electricity resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-electricity resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG218
+  |-fortification, light  (Bonus: +1 | Cost: 0) - DMG218
+  |-fire resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-sonic resistance  (Bonus: +0 | Cost: 1800000) - DMG218
+  |-fire resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG218
+  |-sonic resistance, improved  (Bonus: +0 | Cost: 4200000) - DMG218
+  |-ghost touch  (Bonus: +3 | Cost: 0) - DMG218
+  |-spell resistance (17)  (Bonus: +4 | Cost: 0) - DMG218
+  |-undead controlling  (Bonus: +4 | Cost: 0) - DMG218
+  |-fortification, heavy  (Bonus: +4 | Cost: 0) - DMG218
+  |-arrow deflection  (Bonus: +2 | Cost: 0) - DMG218
+  |-reflecting  (Bonus: +5 | Cost: 0) - DMG218
+  |-spell resistance (19)  (Bonus: +5 | Cost: 0) - DMG218
+  |-fortification, moderate  (Bonus: +3 | Cost: 0) - DMG218
+  |-acid resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG218
+  |-cold resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG218
+  |-animated  (Bonus: +2 | Cost: 0) - DMG218
+  |-spell resistance(15)  (Bonus: +3 | Cost: 0) - DMG218
+  |-electricty resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG218
+  |-fire resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG218
+  |-spell resistance(13)  (Bonus: +2 | Cost: 0) - DMG218
+  |-wild  (Bonus: +3 | Cost: 0) - DMG218
+  |-sonic resistance, greater  (Bonus: +0 | Cost: 6600000) - DMG218
+  |-roll again twice  (Bonus: +0 | Cost: 0) - DMG218
+  |-roll again twice  (Bonus: +0 | Cost: 0) - DMG218
+  \-roll again twice  (Bonus: +0 | Cost: 0) - DMG218
+\-Table: treasure table | Prob: 0 | Book:  | # Entries: 4
+  |-MundaneItem: nothing | Prob: 1 | Book: DMG216 | Cost: 0
+  |-Table: mundane items | Prob: 50 | Book: DMG216 | # Entries: 1
+  |  \-Table: weapons | Prob: 100 | Book: DMG222 | # Entries: 3
+  |    |-Table: common melee | Prob: 70 | Book: DMG222 | # Entries: 16
+  |    |  |-MundaneItem: dagger | Prob: 4 | Book: PHB116 | Cost: 200
+  |    |  |-MundaneItem: greataxe | Prob: 14 | Book: PHB118 | Cost: 2000
+  |    |  |-MundaneItem: greatsword | Prob: 24 | Book: PHB118 | Cost: 5000
+  |    |  |-MundaneItem: kama | Prob: 28 | Book: PHB118 | Cost: 200
+  |    |  |-MundaneItem: longsword | Prob: 41 | Book: PHB119 | Cost: 1500
+  |    |  |-MundaneItem: mace, light | Prob: 45 | Book: PHB119 | Cost: 500
+  |    |  |-MundaneItem: mace, heavy | Prob: 50 | Book: PHB119 | Cost: 1200
+  |    |  |-MundaneItem: nunchaku | Prob: 54 | Book: PHB120 | Cost: 200
+  |    |  |-MundaneItem: quarterstaff | Prob: 57 | Book: PHB120 | Cost: 0
+  |    |  |-MundaneItem: rapier | Prob: 61 | Book: PHB120 | Cost: 2000
+  |    |  |-MundaneItem: scimitar | Prob: 66 | Book: PHB120 | Cost: 1500
+  |    |  |-MundaneItem: shortspear | Prob: 70 | Book: PHB121 | Cost: 100
+  |    |  |-MundaneItem: siangham | Prob: 74 | Book: PHB121 | Cost: 300
+  |    |  |-MundaneItem: sword, bastard | Prob: 84 | Book: PHB121 | Cost: 3500
+  |    |  |-MundaneItem: sword, short | Prob: 89 | Book: PHB121 | Cost: 1000
+  |    |  \-MundaneItem: waraxe, dwarven | Prob: 100 | Book: PHB121 | Cost: 3000
+  |    |-Table: uncommon | Prob: 75 | Book: DMG222 | # Entries: 38
+  |    |  |-MundaneItem: axe, orc double | Prob: 3 | Book: PHB115 | Cost: 6000
+  |    |  |-MundaneItem: battleaxe | Prob: 7 | Book: PHB115 | Cost: 1000
+  |    |  |-MundaneItem: chain, spiked | Prob: 10 | Book: PHB115 | Cost: 2500
+  |    |  |-MundaneItem: club | Prob: 12 | Book: PHB115 | Cost: 0
+  |    |  |-MundaneItem: crossbow, hand | Prob: 16 | Book: PHB115 | Cost: 10000
+  |    |  |-MundaneItem: crossbow, repeating light | Prob: 19 | Book: PHB116 | Cost: 25000
+  |    |  |-MundaneItem: dagger, punching | Prob: 21 | Book: PHB116 | Cost: 200
+  |    |  |-MundaneItem: falchion | Prob: 23 | Book: PHB117 | Cost: 7500
+  |    |  |-MundaneItem: flail, dire | Prob: 26 | Book: PHB117 | Cost: 9000
+  |    |  |-MundaneItem: flail, heavy | Prob: 31 | Book: PHB117 | Cost: 1500
+  |    |  |-MundaneItem: flail, light | Prob: 35 | Book: PHB117 | Cost: 800
+  |    |  |-MundaneItem: gauntlet | Prob: 37 | Book: PHB117 | Cost: 200
+  |    |  |-MundaneItem: gauntlet, spiked | Prob: 39 | Book: PHB118 | Cost: 500
+  |    |  |-MundaneItem: glaive | Prob: 41 | Book: PHB118 | Cost: 800
+  |    |  |-MundaneItem: greatclub | Prob: 43 | Book: PHB118 | Cost: 500
+  |    |  |-MundaneItem: guisarme | Prob: 45 | Book: PHB118 | Cost: 900
+  |    |  |-MundaneItem: halberd | Prob: 48 | Book: PHB118 | Cost: 1000
+  |    |  |-MundaneItem: halfspear | Prob: 51 | Book: PHB101(3.0) | Cost: 100
+  |    |  |-MundaneItem: hammer, gnome hooked | Prob: 54 | Book: PHB118 | Cost: 2000
+  |    |  |-MundaneItem: hammer, light | Prob: 56 | Book: PHB118 | Cost: 100
+  |    |  |-MundaneItem: handaxe | Prob: 58 | Book: PHB118 | Cost: 600
+  |    |  |-MundaneItem: kukri | Prob: 61 | Book: PHB118 | Cost: 800
+  |    |  |-MundaneItem: lance | Prob: 64 | Book: PHB118 | Cost: 1000
+  |    |  |-MundaneItem: longspear | Prob: 67 | Book: PHB119 | Cost: 500
+  |    |  |-MundaneItem: morningstar | Prob: 70 | Book: PHB119 | Cost: 800
+  |    |  |-MundaneItem: net | Prob: 72 | Book: PHB119 | Cost: 2000
+  |    |  |-MundaneItem: pick, heavy | Prob: 74 | Book: PHB120 | Cost: 800
+  |    |  |-MundaneItem: pick, light | Prob: 76 | Book: PHB120 | Cost: 400
+  |    |  |-MundaneItem: ranseur | Prob: 78 | Book: PHB120 | Cost: 1000
+  |    |  |-MundaneItem: sap | Prob: 80 | Book: PHB120 | Cost: 100
+  |    |  |-MundaneItem: scythe | Prob: 82 | Book: PHB120 | Cost: 1800
+  |    |  |-MundaneItem: shuriken | Prob: 84 | Book: PHB121 | Cost: 100
+  |    |  |-MundaneItem: sickle | Prob: 86 | Book: PHB121 | Cost: 600
+  |    |  |-MundaneItem: sword, two-bladed | Prob: 89 | Book: PHB121 | Cost: 10000
+  |    |  |-MundaneItem: trident | Prob: 91 | Book: PHB121 | Cost: 1500
+  |    |  |-MundaneItem: urgrosh, dwarven | Prob: 94 | Book: PHB121 | Cost: 5000
+  |    |  |-MundaneItem: warhammer | Prob: 97 | Book: PHB121 | Cost: 1200
+  |    |  \-MundaneItem: whip | Prob: 100 | Book: PHB121 | Cost: 100
+  |    \-Table: ranged | Prob: 100 | Book: DMG223 | # Entries: 17
+  |      |-Table: ammunition | Prob: 10 | Book: DMG223 | # Entries: 3
+  |      |  |-MundaneItem: arrow | Prob: 50 | Book: PHB114 | Cost: 100
+  |      |  |-MundaneItem: bolt, crossbow | Prob: 80 | Book: PHB115 | Cost: 100
+  |      |  \-MundaneItem: bullet, sling | Prob: 100 | Book: PHB115 | Cost: 10
+  |      |-MundaneItem: axe, throwing | Prob: 20 | Book: PHB114 | Cost: 800
+  |      |-MundaneItem: crossbow, heavy | Prob: 25 | Book: PHB115 | Cost: 5000
+  |      |-MundaneItem: crossbow, light | Prob: 35 | Book: PHB115 | Cost: 3500
+  |      |-MundaneItem: dart | Prob: 39 | Book: PHB116 | Cost: 50
+  |      |-MundaneItem: javelin | Prob: 41 | Book: PHB118 | Cost: 100
+  |      |-MundaneItem: shortbow | Prob: 46 | Book: PHB120 | Cost: 3000
+  |      |-MundaneItem: shortbow, composite (+0 str) | Prob: 51 | Book: PHB120 | Cost: 7500
+  |      |-MundaneItem: shortbow, composite (+1 str) | Prob: 56 | Book: PHB120 | Cost: 15000
+  |      |-MundaneItem: shortbow, composite (+2 str) | Prob: 61 | Book: PHB120 | Cost: 22500
+  |      |-MundaneItem: sling | Prob: 65 | Book: PHB121 | Cost: 0
+  |      |-MundaneItem: longbow | Prob: 75 | Book: PHB118 | Cost: 7500
+  |      |-MundaneItem: longbow, composite (+0 str) | Prob: 80 | Book: PHB119 | Cost: 10000
+  |      |-MundaneItem: longbow, composite (+1 str) | Prob: 85 | Book: PHB119 | Cost: 20000
+  |      |-MundaneItem: longbow, composite (+2 str) | Prob: 90 | Book: PHB119 | Cost: 30000
+  |      |-MundaneItem: longbow, composite (+3 str) | Prob: 95 | Book: PHB119 | Cost: 40000
+  |      \-MundaneItem: longbow, composite (+4 str) | Prob: 100 | Book: PHB119 | Cost: 50000
+  |-MagicItem: medium magic item | Prob: 70 | Book: DMG216 | Cost: 0 Magic, Magic_Medium
+  \-MagicItem: major magic item | Prob: 100 | Book: DMG216 | Cost: 0 Magic, Magic_Major
+
+===================
+
+
+===================
+
+MundaneItem: mace, heavy | Prob: 50 | Book: PHB119 | Cost: 1200
+MagicItem: +2 armor | Prob: 70 | Book: DMG216 | Cost: 0 Magic, Armor, Magic_Medium
+   -  Abilities:  -
++2 armor  (Bonus: +2 | Cost: 0) - DMG216
+
+MundaneItem: sword, bastard | Prob: 84 | Book: PHB121 | Cost: 3500
+MundaneItem: longsword | Prob: 41 | Book: PHB119 | Cost: 1500
+MundaneItem: siangham | Prob: 74 | Book: PHB121 | Cost: 300
+MundaneItem: shortspear | Prob: 70 | Book: PHB121 | Cost: 100
+MundaneItem: kama | Prob: 28 | Book: PHB118 | Cost: 200
+MagicItem: staffs | Prob: 100 | Book:  | Cost: 0 Magic, Magic_Major
+   -  Abilities:  -
+MundaneItem: staffs | Prob: 0 | Book:  | Cost: 0
+
+MagicItem: wondrous item | Prob: 70 | Book:  | Cost: 0 Magic, Magic_Medium
+   -  Abilities:  -
+MundaneItem: wondrous item | Prob: 0 | Book:  | Cost: 0
+
+MundaneItem: waraxe, dwarven | Prob: 100 | Book: PHB121 | Cost: 3000
+MundaneItem: longsword | Prob: 41 | Book: PHB119 | Cost: 1500
+MagicItem: weapons | Prob: 100 | Book:  | Cost: 0 Magic, Magic_Major
+   -  Abilities:  -
+MundaneItem: weapons | Prob: 0 | Book:  | Cost: 0
+
+MundaneItem: greataxe | Prob: 14 | Book: PHB118 | Cost: 2000
+MundaneItem: longbow, composite (+0 str) | Prob: 80 | Book: PHB119 | Cost: 10000
+MagicItem: potions | Prob: 70 | Book:  | Cost: 0 Magic, Magic_Medium
+   -  Abilities:  -
+MundaneItem: potions | Prob: 0 | Book:  | Cost: 0
+
+MundaneItem: kama | Prob: 28 | Book: PHB118 | Cost: 200

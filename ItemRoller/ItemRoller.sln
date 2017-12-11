@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemRoller", "ItemRoller\ItemRoller.csproj", "{7A5A3856-3447-48F5-97B2-E86A197F9098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemRollerTests", "ItemRollerTests\ItemRollerTests.csproj", "{CE0592B9-609F-4F2E-B812-4567C70352AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A5A3856-3447-48F5-97B2-E86A197F9098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5A3856-3447-48F5-97B2-E86A197F9098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5A3856-3447-48F5-97B2-E86A197F9098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5A3856-3447-48F5-97B2-E86A197F9098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE0592B9-609F-4F2E-B812-4567C70352AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0592B9-609F-4F2E-B812-4567C70352AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0592B9-609F-4F2E-B812-4567C70352AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0592B9-609F-4F2E-B812-4567C70352AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

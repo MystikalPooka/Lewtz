@@ -1,0 +1,11 @@
+D:\Coding\Lewtz\Lewtz\ItemRoller\ItemRollerTests\obj\Debug\ItemRollerTests.csprojResolveAssemblyReference.cache
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\bin\Debug\ItemRollerTests.dll
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\bin\Debug\ItemRollerTests.pdb
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\bin\Debug\ItemRoller.exe
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\bin\Debug\Newtonsoft.Json.dll
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\bin\Debug\ItemRoller.pdb
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\bin\Debug\Newtonsoft.Json.xml
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\obj\Debug\ItemRollerTests.csprojResolveAssemblyReference.cache
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\obj\Debug\ItemRollerTests.dll
+D:\Coding\Lewtz\ItemRoller\ItemRollerTests\obj\Debug\ItemRollerTests.pdb

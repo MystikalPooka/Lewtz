@@ -1,0 +1,98 @@
+[
+	{
+	  "name":"Padded Armor",
+	  "book":"DMG216",
+	  "probability":1,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":15500
+	},
+	{
+	  "name":"Leather Armor",
+	  "book":"DMG216",
+	  "probability":2,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":16000
+	},
+	{
+	  "name":"Studded Leather Armor",
+	  "book":"DMG216",
+	  "probability":17,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":17500
+	},
+	{
+	  "name":"Chain Shirt",
+	  "book":"DMG216",
+	  "probability":32,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":25000
+	},
+	{
+	  "name":"Hide Armor",
+	  "book":"DMG216",
+	  "probability":42,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":16500
+	},
+	{
+	  "name":"Scale Mail",
+	  "book":"DMG216",
+	  "probability":43,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":20000
+	},
+	{
+	  "name":"Chainmail",
+	  "book":"DMG216",
+	  "probability":44,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":30000
+	},
+	{
+	  "name":"Breastplate",
+	  "book":"DMG216",
+	  "probability":57,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":35000
+	},
+	{
+	  "name":"Splint Mail",
+	  "book":"DMG216",
+	  "probability":58,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":35000
+	},
+	{
+	  "name":"Banded Mail",
+	  "book":"DMG216",
+	  "probability":59,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":40000
+	},
+	{
+	  "name":"Half-Plate",
+	  "book":"DMG216",
+	  "probability":60,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":75000
+	},
+	{
+	  "name":"Full Plate",
+	  "book":"DMG216",
+	  "probability":100,
+	  "type":"item",
+	  "item types":"Armor",
+	  "cost":165000
+	},
+]
