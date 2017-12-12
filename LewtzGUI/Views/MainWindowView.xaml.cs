@@ -17,9 +17,9 @@ namespace LewtzGUI.Views
     /// <summary>
     /// Interaction logic for MainWindowsView.xaml
     /// </summary>
-    public partial class MainWindowsView : Window
+    public partial class MainWindowView : Window
     {
-        public MainWindowsView()
+        public MainWindowView()
         {
             InitializeComponent();
         }
