@@ -21,7 +21,7 @@ namespace LewtzGUI.Views
     {
         public MainWindowView()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
     }
 }

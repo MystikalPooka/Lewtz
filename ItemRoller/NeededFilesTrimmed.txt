@@ -1,0 +1,15 @@
+File Not Found: ..\..\Tables\specific shield.json
+
+File Not Found: ..\..\Tables\potions.json
+
+File Not Found: ..\..\Tables\rings.json
+
+File Not Found: ..\..\Tables\rods.json
+
+File Not Found: ..\..\Tables\scrolls.json
+
+File Not Found: ..\..\Tables\staffs.json
+
+File Not Found: ..\..\Tables\wands.json
+
+File Not Found: ..\..\Tables\wondrous item.json

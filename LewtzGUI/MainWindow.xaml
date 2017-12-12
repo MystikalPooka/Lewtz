@@ -6,4 +6,14 @@
         xmlns:local="clr-namespace:LewtzGUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- In MainWindow.xaml -->
+    <Menu>
+        <MenuItem Header="_File">
+            <MenuItem Header="_Exit" 
+                    Command="{Binding Path=CloseCommand}" />
+        </MenuItem>
+        <MenuItem Header="_Edit" />
+        <MenuItem Header="_Options" />
+        <MenuItem Header="_Help" />
+    </Menu>
 </Window>
