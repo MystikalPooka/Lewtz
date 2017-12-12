@@ -9,6 +9,12 @@ namespace ItemRoller.Data_Structure
     {
         private static ConcurrentDictionary<string, Table> tableDict = new ConcurrentDictionary<string, Table>();
 
+        /// <summary>
+        /// Get a table by name. 
+        /// Returns a new Table with name "Table Not Found" if no table is found in the repository
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <returns>Table by name or Table("Table Not Found") if not found</returns>
         public static Table GetTableFromString(string tableName)
         {
             if(tableDict.ContainsKey(tableName))
@@ -18,6 +24,12 @@ namespace ItemRoller.Data_Structure
             else return new Table("Table Not Found");
         }
 
+        /// <summary>
+        /// Get a table from the repository that has all components of specified type removed
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <param name="types"></param>
+        /// <returns></returns>
         public static Table GetTypeSortedTableFromString(string tableName, ItemTypes types = ItemTypes.None)
         {
             var table = GetTableFromString(tableName);

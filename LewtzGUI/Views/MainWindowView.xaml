@@ -17,6 +17,15 @@
         <StackPanel>
             <Button Width="64" Height="25" Grid.Row="0">Add Hoard</Button>
         </StackPanel>
-        <TextBlock Grid.Column="1"></TextBlock>
+        <StackPanel>
+            <Button Content="Add TextBox" Command="{Binding TestCommand}"/>
+            <ItemsControl ItemsSource="{Binding SomeCollection}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBox Text="{Binding Path=.}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
     </Grid>
 </Window>
