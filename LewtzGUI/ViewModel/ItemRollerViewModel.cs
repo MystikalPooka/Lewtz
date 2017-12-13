@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace LewtzGUI.ViewModel
 {
-    class ItemRollerViewModel
+    class ItemRollerViewModel : ViewModelBase
     {
         RelayCommand _closeCommand;
         public ICommand CloseCommand
@@ -23,21 +23,6 @@ namespace LewtzGUI.ViewModel
                 }
                 return _closeCommand;
             }
-        }
-
-        public event Action RequestClose;
-
-        public virtual void Close()
-        {
-            if (RequestClose != null)
-            {
-                RequestClose();
-            }
-        }
-
-        public virtual bool CanClose()
-        {
-            return true;
         }
     }
 }

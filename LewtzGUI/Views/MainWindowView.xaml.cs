@@ -17,11 +17,11 @@ namespace LewtzGUI.Views
     /// <summary>
     /// Interaction logic for MainWindowsView.xaml
     /// </summary>
-    public partial class MainWindowView : Window
+    public partial class MainWindowView : UserControl
     {
         public MainWindowView()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
     }
 }

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LewtzGUI"
         mc:Ignorable="d"
+        xmlns:vw="clr-namespace:LewtzGUI.Views"
         Title="MainWindow" Height="350" Width="525">
-    <!-- In MainWindow.xaml -->
     <Menu>
         <MenuItem Header="_File">
             <MenuItem Header="_Exit" 
@@ -16,4 +16,6 @@
         <MenuItem Header="_Options" />
         <MenuItem Header="_Help" />
     </Menu>
+    
 </Window>
+    

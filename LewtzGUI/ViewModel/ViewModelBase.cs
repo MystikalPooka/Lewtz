@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace LewtzGUI.ViewModel
 {
-    public abstract class ViewModelBase : INotifyPropertyChanged
+    public abstract class ViewModelBase : INotifyPropertyChanged, IDisposable
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -36,9 +36,26 @@ namespace LewtzGUI.ViewModel
             return true;
         }
 
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        public event Action RequestClose;
+
+        public virtual void Close()
+        {
+            RequestClose?.Invoke();
+        }
+
+        public virtual bool CanClose()
+        {
+            return true;
+        }
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
     }
 }
