@@ -6,16 +6,25 @@
         xmlns:local="clr-namespace:LewtzGUI"
         mc:Ignorable="d"
         xmlns:vw="clr-namespace:LewtzGUI.Views"
+        xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
         Title="MainWindow" Height="350" Width="525">
-    <Menu>
-        <MenuItem Header="_File">
-            <MenuItem Header="_Exit" 
+    <Window.Resources>
+        <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel" 
+            DataType="{x:Type t:MainWindowViewModel}">
+            <vw:MainWindowView/>
+            </DataTemplate>
+    </Window.Resources>
+    <StackPanel>
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_Exit" 
                     Command="{Binding Path=CloseCommand}" />
-        </MenuItem>
-        <MenuItem Header="_Edit" />
-        <MenuItem Header="_Options" />
-        <MenuItem Header="_Help" />
-    </Menu>
-    
+            </MenuItem>
+            <MenuItem Header="_Edit" />
+            <MenuItem Header="_Options" />
+            <MenuItem Header="_Help" />
+        </Menu>
+        <ContentControl Content="{Binding}"/>
+    </StackPanel>
 </Window>
     

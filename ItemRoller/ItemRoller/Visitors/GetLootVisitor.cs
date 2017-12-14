@@ -59,7 +59,7 @@ namespace ItemRoller.Visitors
         public void Visit(MagicItem item)
         {
             var itemToBuild = item.Clone() as MagicItem;
-            itemToBuild.Build();
+            //NEEDS TO BE BUILT ON THE OUTSIDE.
             lootBag.Add(itemToBuild);
         }
 

@@ -1,13 +1,12 @@
 ﻿using ItemRoller.Loaders;
-using System.IO;
 using System.Collections.Concurrent;
-using System;
+using System.IO;
 
 namespace ItemRoller.Data_Structure
 {
-    public static class TableRepository
+    public class TableDatabase : IDatabase
     {
-        private static ConcurrentDictionary<string, Table> tableDict = new ConcurrentDictionary<string, Table>();
+        private ConcurrentDictionary<string, Table> tableDict = new ConcurrentDictionary<string, Table>();
 
         /// <summary>
         /// Get a table by name. 
@@ -15,9 +14,9 @@ namespace ItemRoller.Data_Structure
         /// </summary>
         /// <param name="tableName"></param>
         /// <returns>Table by name or Table("Table Not Found") if not found</returns>
-        public static Table GetTableFromString(string tableName)
+        public Table GetTableFromString(string tableName)
         {
-            if(tableDict.ContainsKey(tableName))
+            if (tableDict.ContainsKey(tableName))
             {
                 return (Table)tableDict[tableName].Clone();
             }
@@ -30,19 +29,19 @@ namespace ItemRoller.Data_Structure
         /// <param name="tableName"></param>
         /// <param name="types"></param>
         /// <returns></returns>
-        public static Table GetTypeSortedTableFromString(string tableName, ItemTypes types = ItemTypes.None)
+        public Table GetTypeSortedTableFromString(string tableName, ItemTypes types = ItemTypes.None)
         {
             var table = GetTableFromString(tableName);
             table.RemoveChildrenNotMatchingTypes(types);
             return table;
         }
 
-        public static void AddTable(Table table)
+        public void AddTable(Table table)
         {
-            tableDict.AddOrUpdate(table.Name, table, (k,v) => table);
+            tableDict.AddOrUpdate(table.Name, table, (k, v) => table);
         }
-        
-        public static void LoadAllMatchingStringFromDirectory(string directory, string searchString, IDatabaseLoader loader)
+
+        public void LoadAllMatchingStringFromDirectory(string directory, string searchString, IDatabaseLoader loader)
         {
             foreach (string filename in Directory.EnumerateFiles(directory, searchString))
             {
@@ -50,7 +49,7 @@ namespace ItemRoller.Data_Structure
             }
         }
 
-        public static void LoadSingleFile(string filename, IDatabaseLoader loader)
+        public void LoadSingleFile(string filename, IDatabaseLoader loader)
         {
             AddTable(loader.LoadTableFromFile(filename));
         }

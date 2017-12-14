@@ -8,6 +8,7 @@ namespace ItemRoller.Data_Structure
     public class MagicItem : Item
     {
         private List<Component> appliedAbilities;
+        public IReadOnlyList<Component> Abilities => appliedAbilities as IReadOnlyList<Component>;
 
         protected MagicItem(MagicItem item)
         {
@@ -24,27 +25,7 @@ namespace ItemRoller.Data_Structure
             Types |= ItemTypes.Magic;
         }
 
-        public void Build()
-        {
-            RollAllAbilities();
-            SetItemTypesFromAppliedAbilities();
-            RollSpecialAbilities();
-        }
-
-        private void RollAllAbilities()
-        {
-            var buildTable = TableRepository.GetTypeSortedTableFromString("magic base", Types);
-            if (buildTable.Name != "Table Not Found" && buildTable != null)
-            {
-                var abilitiesVisitor = new GetLootVisitor();
-                buildTable.Accept(abilitiesVisitor);
-
-                buildTable.RollCount = 1;
-                appliedAbilities.AddRange(abilitiesVisitor.GetLootBag());
-            }
-        }
-
-        private void SetItemTypesFromAppliedAbilities()
+        public void SetItemTypesFromAppliedAbilities()
         {
             if(appliedAbilities.Count() > 0)
             {
@@ -57,30 +38,24 @@ namespace ItemRoller.Data_Structure
             }
         }
 
-        private void RollSpecialAbilities()
+        public void AddAbilities(ICollection<Component> abilities)
         {
-            var abilitiesToRoll =
-                                from ability in appliedAbilities
-                                where ability.Name.ToLower().Contains("special abilities")
-                                select ability;
+            appliedAbilities.AddRange(abilities);
+        }
 
+        public void AddAbility(Component ability)
+        {
+            appliedAbilities.Add(ability);
+        }
 
-            var abilitiesToAdd = new List<Component>();
-            foreach(Component ability in abilitiesToRoll)
-            {
-                var typeToRoll = Types & ~(ItemTypes.Magic | ItemTypes.Magic_Major | ItemTypes.Magic_Medium | ItemTypes.Magic_Minor);
-                var typeString = typeToRoll.ToString().ToLower() + " special abilities";
-                var rollTable = TableRepository.GetTypeSortedTableFromString(typeString, Types);
+        public void RemoveAbilities(Predicate<Component> removePred)
+        {
+            appliedAbilities.RemoveAll(removePred);
+        }
 
-                if(rollTable != null)
-                {
-                    var abilities = new GetLootVisitor();
-                    rollTable.Accept(abilities);
-                    abilitiesToAdd.AddRange(abilities.GetLootBag());
-                }
-            }
-            appliedAbilities.AddRange(abilitiesToAdd);
-            appliedAbilities.RemoveAll(k => k.Name.ToLower().Contains("special abilities"));
+        public void RemoveAbility(Component ability)
+        {
+            appliedAbilities.Remove(ability);
         }
 
         public override void Accept(IVisitor visitor)

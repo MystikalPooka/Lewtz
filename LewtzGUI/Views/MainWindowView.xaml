@@ -1,32 +1,31 @@
-﻿<Window x:Class="LewtzGUI.Views.MainWindowView"
+﻿<UserControl x:Class="LewtzGUI.Views.MainWindowView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LewtzGUI.Views"
+        xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindowView" Height="300" Width="525">
+        Height="300" Width="525">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel>
-            <Button Width="64" Height="25" Grid.Row="0">Add Hoard</Button>
-        </StackPanel>
-        <StackPanel>
-            <ItemsControl ItemsSource="{Binding SomeCollection}">
+        <Button Grid.Column="0" Grid.Row="0" Command="{Binding AddItemRoller}" Width="64" Height="25">Add Hoard</Button>
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <ItemsControl ItemsSource="{Binding ItemRollers}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <TextBox Text="{Binding Path=.}"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
-            <Button Content="Add TextBox" Command="{Binding TestCommand}" Margin="0,0,0.115,0"/>
+
         </StackPanel>
     </Grid>
-    
-</Window>
+</UserControl>

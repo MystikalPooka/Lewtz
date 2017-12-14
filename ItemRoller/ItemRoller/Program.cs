@@ -9,13 +9,14 @@ namespace ItemRoller
     {
         static void Main(string[] args)
         {
-            TableRepository.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
-            TableRepository.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
-            TableRepository.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
-            var baseTable = TableRepository.GetTableFromString("treasure table");
+            TableDatabase database = new TableDatabase();
+            database.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
+            database.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
+            database.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
+            var baseTable = database.GetTableFromString("treasure table");
 
-            TableRepository.GetTableFromString("armor special abilities").Accept(new PrintEntireTreeVisitor());
-            TableRepository.GetTableFromString("shield special abilities").Accept(new PrintEntireTreeVisitor());
+            database.GetTableFromString("armor special abilities").Accept(new PrintEntireTreeVisitor());
+            database.GetTableFromString("shield special abilities").Accept(new PrintEntireTreeVisitor());
 
             baseTable.Accept(new PrintEntireTreeVisitor());
             Console.WriteLine("\r\n===================\r\n");
@@ -29,6 +30,7 @@ namespace ItemRoller
 
             foreach (Component comp in loot.GetLootBag())
             {
+                comp.Accept(new BuildItemVisitor(database));
                 Console.WriteLine("--------------------------------------");
                 Console.WriteLine(comp);
                 Console.WriteLine("--------------------------------------");

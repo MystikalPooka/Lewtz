@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LewtzGUI.Data_Access;
 using System.Windows.Input;
 
 namespace LewtzGUI.ViewModel
 {
     class ItemRollerViewModel : ViewModelBase
     {
+        TableRepository baseRepoToRollFrom;
+        public ItemRollerViewModel(TableRepository repo)
+        {
+            baseRepoToRollFrom = repo;
+        }
+
         RelayCommand _closeCommand;
         public ICommand CloseCommand
         {

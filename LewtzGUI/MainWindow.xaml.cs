@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using LewtzGUI.ViewModel;
+using System.Windows;
 
 namespace LewtzGUI
 {
@@ -10,6 +11,7 @@ namespace LewtzGUI
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }
