@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LewtzGUI.Views"
+        xmlns:vw="clr-namespace:LewtzGUI.Views"
         xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
         mc:Ignorable="d"
-        Height="300" Width="525">
+        Height="525" Width="725">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -16,16 +16,21 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Column="0" Grid.Row="0" Command="{Binding AddItemRoller}" Width="64" Height="25">Add Hoard</Button>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+            <Button Command="{Binding AddItemRoller}" Width="auto" Height="auto">Add Hoard</Button>
+            <Button Command="{Binding OnItemRollerRequestClose}" Width="auto" Height="auto">Remove Hoard</Button>
+        </StackPanel>
+
         <StackPanel Grid.Column="0" Grid.Row="1">
             <ItemsControl ItemsSource="{Binding ItemRollers}">
                 <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <TextBox Text="{Binding Path=.}"/>
-                    </DataTemplate>
+                        <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel"
+                                  DataType="{x:Type t:ItemRollerViewModel}">
+                            <vw:HoardControl/>
+                        </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
-
         </StackPanel>
     </Grid>
 </UserControl>

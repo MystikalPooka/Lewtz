@@ -40,13 +40,34 @@ namespace LewtzGUI.ViewModel
             }
         }
 
+        RelayCommand _removeLastRoller;
+        public ICommand RemoveItemRoller
+        {
+            get
+            {
+                if (_removeLastRoller == null)
+                {
+                    _removeLastRoller = new RelayCommand(
+                       param => RemoveLastItemRoller(),
+                       param => true
+                       );
+                }
+                return _removeLastRoller;
+            }
+        }
+
+        void RemoveLastItemRoller()
+        {
+            if(_ItemRollers.Count > 0) this.ItemRollers.RemoveAt(_ItemRollers.Count-1);
+        }
+
         void AddNewItemRoller()
         {
             if (MainDBContext == null)
             {
                 MainDBContext = new TableRepository();
             }
-            _ItemRollers.Add(new ItemRollerViewModel(MainDBContext));
+            this.ItemRollers.Add(new ItemRollerViewModel(MainDBContext));
         }
 
         void OnItemRollersChanged(object sender, NotifyCollectionChangedEventArgs e)

@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         xmlns:vw="clr-namespace:LewtzGUI.Views"
         xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="725">
     <Window.Resources>
         <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel" 
             DataType="{x:Type t:MainWindowViewModel}">
             <vw:MainWindowView/>
             </DataTemplate>
     </Window.Resources>
+    
     <StackPanel>
         <Menu>
             <MenuItem Header="_File">
