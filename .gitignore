@@ -1,0 +1,11 @@
+bin/
+obj/
+*.exe
+Tables_Old/
+*.pdb
+*.cache
+debug/
+.vs/
+*.user
+*.config
+TestTables/

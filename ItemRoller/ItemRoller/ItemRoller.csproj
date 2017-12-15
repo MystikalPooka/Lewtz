@@ -68,14 +68,18 @@
   <ItemGroup>
     <Compile Include="Data Structure\Ability.cs" />
     <Compile Include="Data Structure\Component.cs" />
+    <Compile Include="Data Structure\IDatabase.cs" />
+    <Compile Include="Data Structure\IItemBuilder.cs" />
+    <Compile Include="Data Structure\MagicItemBuilder.cs" />
     <Compile Include="Data Structure\MundaneItem.cs" />
     <Compile Include="Data Structure\Item.cs" />
     <Compile Include="Data Structure\ItemTypes.cs" />
     <Compile Include="Data Structure\Table.cs" />
     <Compile Include="Data Structure\MagicItem.cs" />
-    <Compile Include="Data Structure\TableRepository.cs" />
-    <Compile Include="Loaders\IDataLoader.cs" />
+    <Compile Include="Data Structure\TableDatabase.cs" />
+    <Compile Include="Loaders\IDatabaseLoader.cs" />
     <Compile Include="Loaders\JSON\JSONLoader.cs" />
+    <Compile Include="Visitors\BuildItemVisitor.cs" />
     <Compile Include="Visitors\IVisitable.cs" />
     <Compile Include="Visitors\IVisitor.cs" />
     <Compile Include="Program.cs" />
