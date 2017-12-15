@@ -23,6 +23,37 @@ namespace LewtzGUI.ViewModel
             }
         }
 
+        private int _Level = 1;
+        public int Level
+        {
+            get
+            {
+                return _Level;
+            }
+
+            set
+            {
+                _Level = value;
+                OnPropertyChanged("Level");
+            }
+        }
+
+        private ObservableCollection<int> _SelectableLevels;
+        public ObservableCollection<int> SelectableLevels
+        {
+            get
+            {
+                if (_SelectableLevels == null)
+                {
+                    _SelectableLevels = new ObservableCollection<int>();
+                    _SelectableLevels.CollectionChanged += //this.OnItemRollersChanged;
+                }
+                return _SelectableLevels;
+            }
+        }
+
+
+
         TableRepository baseRepoToRollFrom;
         public ItemRollerViewModel(TableRepository repo)
         {

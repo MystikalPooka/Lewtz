@@ -58,7 +58,7 @@ namespace LewtzGUI.ViewModel
 
         void RemoveLastItemRoller()
         {
-            if(_ItemRollers.Count > 0) this.ItemRollers.RemoveAt(_ItemRollers.Count-1);
+            if (_ItemRollers.Count > 0) ItemRollers[_ItemRollers.Count - 1].Close();
         }
 
         void AddNewItemRoller()
@@ -74,7 +74,7 @@ namespace LewtzGUI.ViewModel
         {
             if (e.NewItems != null && e.NewItems.Count != 0)
                 foreach (ItemRollerViewModel itemroller in e.NewItems)
-                    itemroller.RequestClose +=() => this.ItemRollers.Remove(sender as ItemRollerViewModel);
+                    itemroller.RequestClose += () => this.ItemRollers.Remove(sender as ItemRollerViewModel);
 
             if (e.OldItems != null && e.OldItems.Count != 0)
                 foreach (ItemRollerViewModel itemroller in e.OldItems)
