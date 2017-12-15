@@ -78,6 +78,7 @@
     <Compile Include="Data Access\TableRepository.cs" />
     <Compile Include="ViewModel\CommandViewModel.cs" />
     <Compile Include="ViewModel\ItemRollerViewModel.cs" />
+    <Compile Include="ViewModel\LootBagViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />

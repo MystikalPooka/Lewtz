@@ -2,6 +2,7 @@
 using LewtzGUI.Data_Access;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Windows.Input;
 
 namespace LewtzGUI.ViewModel
@@ -38,43 +39,24 @@ namespace LewtzGUI.ViewModel
             }
         }
 
-        private ObservableCollection<int> _SelectableLevels;
-        public ObservableCollection<int> SelectableLevels
+        private List<int> _SelectableLevels;
+        public List<int> SelectableLevels
         {
             get
             {
                 if (_SelectableLevels == null)
                 {
-                    _SelectableLevels = new ObservableCollection<int>();
-                    _SelectableLevels.CollectionChanged += //this.OnItemRollersChanged;
+                    _SelectableLevels = new List<int>();
                 }
                 return _SelectableLevels;
             }
         }
-
-
 
         TableRepository baseRepoToRollFrom;
         public ItemRollerViewModel(TableRepository repo)
         {
             baseRepoToRollFrom = repo;
         }
-
-        private ObservableCollection<Component> _lootBag;
-        public ObservableCollection<Component> LootBag
-        {
-            get
-            {
-                return _lootBag;
-            }
-
-            protected set
-            {
-                _lootBag = value;
-                OnPropertyChanged("LootBag");
-            }
-        }
-
 
         RelayCommand _closeCommand;
         public ICommand CloseCommand
