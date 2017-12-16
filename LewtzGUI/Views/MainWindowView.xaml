@@ -10,7 +10,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="250"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -22,15 +22,15 @@
             <Button Command="{Binding OnItemRollerRequestClose}" Width="auto" Height="auto">Remove Hoard</Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="0" Grid.Row="1">
+        <ScrollViewer Grid.Column="0" Grid.Row="1" Height="auto">
             <ItemsControl ItemsSource="{Binding ItemRollers}">
                 <ItemsControl.ItemTemplate>
-                        <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel"
+                    <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel"
                                   DataType="{x:Type t:ItemRollerViewModel}">
-                            <vw:HoardControl/>
-                        </DataTemplate>
+                        <vw:HoardControl/>
+                    </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
-        </StackPanel>
+        </ScrollViewer>
     </Grid>
 </UserControl>
