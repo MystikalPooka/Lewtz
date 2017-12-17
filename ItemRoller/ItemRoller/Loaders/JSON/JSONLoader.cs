@@ -36,7 +36,6 @@ namespace ItemRoller.Loaders
                             loadedComponent.ParentTable = tableToLoad;
                             loadedComponent.Probability = (int)prob.Value;
                             
-
                             tableToLoad.Add(loadedComponent);
                             tableToLoad.SortTable();
                         }
@@ -84,7 +83,6 @@ namespace ItemRoller.Loaders
                     break;
             }
 
-            
             return compToAdd;
         }
 

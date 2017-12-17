@@ -16,7 +16,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-
+ 
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
             <Button Command="{Binding AddItemRoller}" Width="auto" Height="auto">Add Hoard</Button>
             <Button Command="{Binding OnItemRollerRequestClose}" Width="auto" Height="auto">Remove Hoard</Button>
