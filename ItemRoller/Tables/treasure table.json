@@ -1,31 +1,66 @@
 [
 	{
-	  "name":"nothing",
-	  "book":"DMG216",
-	  "probability":1,
-	  "type":"item"
+		"level":1
+		{
+		  "name":"nothing",
+		  "book":"DMG216",
+		  "probability":1,
+		  "type":"item"
+		},
+		{
+		  "name":"mundane items",
+		  "book":"DMG216",
+		  "probability":50,
+		  "type":"table",
+		  "rollcount":1
+		},
+		{
+		  "name":"medium magic item",
+		  "book":"DMG216",
+		  "probability":70,
+		  "type":"magic item",
+		  "item types":"Magic_Medium",
+		  "count":1
+		},
+		{
+		  "name":"major magic item",
+		  "book":"DMG216",
+		  "probability":100,
+		  "type":"magic item",
+		  "item types":"Magic_Major",
+		  "count":1
+		}
 	},
-	{
-	  "name":"mundane items",
-	  "book":"DMG216",
-	  "probability":50,
-	  "type":"table",
-	  "rollcount":1
-	},
-	{
-	  "name":"medium magic item",
-	  "book":"DMG216",
-	  "probability":70,
-	  "type":"magic item",
-	  "item types":"Magic_Medium",
-	  "count":1
-	},
-	{
-	  "name":"major magic item",
-	  "book":"DMG216",
-	  "probability":100,
-	  "type":"magic item",
-	  "item types":"Magic_Major",
-	  "count":1
+		{
+		"level":2
+		{
+		  "name":"nothing",
+		  "book":"DMG216",
+		  "probability":1,
+		  "type":"item"
+		},
+		{
+		  "name":"mundane items",
+		  "book":"DMG216",
+		  "probability":50,
+		  "type":"table",
+		  "rollcount":1
+		},
+		{
+		  "name":"medium magic item",
+		  "book":"DMG216",
+		  "probability":70,
+		  "type":"magic item",
+		  "item types":"Magic_Medium",
+		  "count":1
+		},
+		{
+		  "name":"major magic item",
+		  "book":"DMG216",
+		  "probability":100,
+		  "type":"magic item",
+		  "item types":"Magic_Major",
+		  "count":1
+		}
 	}
 ]

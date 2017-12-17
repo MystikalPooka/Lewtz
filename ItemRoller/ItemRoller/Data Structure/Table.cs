@@ -1,5 +1,6 @@
 ﻿using ItemRoller.Loaders;
 using ItemRoller.Visitors;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,9 @@ namespace ItemRoller.Data_Structure
     public class Table : Component
     {
         private List<Component> children;
+
+        [JsonProperty("level")]
+        public int TableLevel { get; set; }
 
         public int RollCount { get; set; }
 
