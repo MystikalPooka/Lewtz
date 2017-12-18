@@ -16,19 +16,19 @@
             </StackPanel>
         </GroupBox.Header>
         <StackPanel Orientation="Horizontal" MaxHeight="60">
-            <ComboBox Text="Coins" TextSearch.Text="Coins" TextElement.FontSize="13">
+            <ComboBox Text="Coins" TextSearch.Text="Coins" TextElement.FontSize="13" SelectedIndex="0">
                 <ComboBoxItem>1x Coins</ComboBoxItem>
                 <ComboBoxItem>1.5x Coins</ComboBoxItem>
                 <ComboBoxItem>2x Coins</ComboBoxItem>
                 <ComboBoxItem>4x Coins</ComboBoxItem>
             </ComboBox>
-            <ComboBox Text="Goods" TextElement.FontSize="13" TextSearch.TextPath="">
+            <ComboBox Text="Goods" TextElement.FontSize="13" SelectedIndex="0">
                 <ComboBoxItem>1x Goods</ComboBoxItem>
                 <ComboBoxItem>1.5x Goods</ComboBoxItem>
                 <ComboBoxItem>2x Goods</ComboBoxItem>
                 <ComboBoxItem>4x Goods</ComboBoxItem>
             </ComboBox>
-            <ComboBox Text="Items" TextElement.FontSize="13">
+            <ComboBox Text="Items" TextElement.FontSize="13" SelectedIndex="0">
                 <ComboBoxItem>1x Items</ComboBoxItem>
                 <ComboBoxItem>1.5x Items</ComboBoxItem>
                 <ComboBoxItem>2x Items</ComboBoxItem>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LewtzGUI.Data_Access;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -7,8 +8,15 @@ using System.Threading.Tasks;
 
 namespace LewtzGUI.ViewModel
 {
-    public class LootBagViewModel
+    public class LootBagViewModel : ViewModelBase
     {
+        TableRepository DBContext;
+
+        public LootBagViewModel(TableRepository dbRepo)
+        {
+            DBContext = dbRepo;
+        }
+
         private List<Component> _LootBag;
         public List<Component> LootBag
         {
@@ -18,5 +26,7 @@ namespace LewtzGUI.ViewModel
                 return _LootBag;
             }
         }
+
+
     }
 }

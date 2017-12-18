@@ -9,6 +9,12 @@ namespace LewtzGUI.ViewModel
 {
     class ItemRollerViewModel : ViewModelBase
     {
+        TableRepository baseRepoToRollFrom;
+        public ItemRollerViewModel(TableRepository repo)
+        {
+            baseRepoToRollFrom = repo;
+        }
+
         private string _Name = "new hoard";
         public string Name
         {
@@ -39,6 +45,13 @@ namespace LewtzGUI.ViewModel
             }
         }
 
+
+
+        public void RollLoot()
+        {
+
+        }
+
         private List<int> _SelectableLevels;
         public List<int> SelectableLevels
         {
@@ -50,12 +63,6 @@ namespace LewtzGUI.ViewModel
                 }
                 return _SelectableLevels;
             }
-        }
-
-        TableRepository baseRepoToRollFrom;
-        public ItemRollerViewModel(TableRepository repo)
-        {
-            baseRepoToRollFrom = repo;
         }
 
         RelayCommand _closeCommand;

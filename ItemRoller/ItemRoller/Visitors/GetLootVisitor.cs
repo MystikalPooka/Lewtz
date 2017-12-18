@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ItemRoller.Visitors
 {
-    class GetLootVisitor : IVisitor
+    public class GetLootVisitor : IVisitor
     {
         private IList<Component> lootBag;
         public List<Component> GetLootBag()

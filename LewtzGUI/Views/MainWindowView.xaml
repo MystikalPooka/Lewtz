@@ -10,19 +10,20 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="250"/>
+            <RowDefinition Height="275"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
- 
+
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
             <Button Command="{Binding AddItemRoller}" Width="auto" Height="auto">Add Hoard</Button>
             <Button Command="{Binding OnItemRollerRequestClose}" Width="auto" Height="auto">Remove Hoard</Button>
         </StackPanel>
 
-        <ScrollViewer Grid.Column="0" Grid.Row="1" Height="auto">
+        <ScrollViewer Grid.Column="0" Grid.Row="1" Height="auto" VerticalScrollBarVisibility="Auto">
             <ItemsControl ItemsSource="{Binding ItemRollers}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel"
@@ -32,5 +33,13 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </ScrollViewer>
+
+        <GridSplitter Grid.Column="1" Grid.RowSpan="2" 
+                      VerticalAlignment="Stretch" Width="2"
+                      HorizontalAlignment="Center"
+                      BorderBrush="DarkSlateGray" Background="Black"/>
+
+
+        <TextBlock></TextBlock>
     </Grid>
 </UserControl>
