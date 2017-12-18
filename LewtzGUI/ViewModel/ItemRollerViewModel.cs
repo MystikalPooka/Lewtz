@@ -45,13 +45,6 @@ namespace LewtzGUI.ViewModel
             }
         }
 
-
-
-        public void RollLoot()
-        {
-
-        }
-
         private List<int> _SelectableLevels;
         public List<int> SelectableLevels
         {
@@ -64,6 +57,55 @@ namespace LewtzGUI.ViewModel
                 return _SelectableLevels;
             }
         }
+
+        ObservableCollection<Component> _LootBag;
+        public ObservableCollection<Component> LootBag
+        {
+            get
+            {
+                if (_LootBag == null)
+                {
+                    _LootBag = new ObservableCollection<Component>();
+                    _LootBag.CollectionChanged += this.OnLootBagChanged;
+                }
+                return _LootBag;
+            }
+        }
+
+        void OnLootBagChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            //if (e.NewItems != null && e.NewItems.Count != 0)
+            //    foreach (Component item in e.NewItems)
+            //        itemroller.RequestClose += () => this.ItemRollers.Remove(sender as ItemRollerViewModel);
+
+            //if (e.OldItems != null && e.OldItems.Count != 0)
+            //    foreach (ItemRollerViewModel itemroller in e.OldItems)
+            //        itemroller.RequestClose -= () => this.ItemRollers.Remove(sender as ItemRollerViewModel);
+        }
+
+
+
+        RelayCommand _lootCommand;
+        public ICommand lootCommand
+        {
+            get
+            {
+                if(_lootCommand == null)
+                {
+                    _lootCommand = new RelayCommand(
+                        param => RollLoot(),
+                        param => true);
+                }
+                return _lootCommand;
+            }
+        }
+
+        public void RollLoot()
+        {
+            var baseTable = baseRepoToRollFrom.DatabaseContext.GetTableFromString("treasure table");
+            var lootBag = baseRepoToRollFrom.RollTableLoot(baseTable);
+        }
+
 
         RelayCommand _closeCommand;
         public ICommand CloseCommand

@@ -34,7 +34,7 @@
                 <ComboBoxItem>2x Items</ComboBoxItem>
                 <ComboBoxItem>4x Items</ComboBoxItem>
             </ComboBox>
-            <Button>LOOT!</Button>
+            <Button Command="">LOOT!</Button>
         </StackPanel>
     </GroupBox>
 </UserControl>
