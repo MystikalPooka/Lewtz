@@ -15,18 +15,18 @@ namespace LewtzGUI.ViewModel
             baseRepoToRollFrom = repo;
         }
 
-        private string _Name = "new hoard";
-        public string Name
+        private string _HoardName = "new hoard";
+        public string HoardName
         {
             get
             {
-                return _Name;
+                return _HoardName;
             }
 
             set
             {
-                _Name = value;
-                OnPropertyChanged("Name");
+                _HoardName = value;
+                OnPropertyChanged("HoardName");
             }
         }
 
@@ -58,35 +58,21 @@ namespace LewtzGUI.ViewModel
             }
         }
 
-        ObservableCollection<Component> _LootBag;
-        public ObservableCollection<Component> LootBag
+        private ObservableCollection<ItemViewModel> _LootBag;
+        public ObservableCollection<ItemViewModel> LootBag
         {
             get
             {
                 if (_LootBag == null)
                 {
-                    _LootBag = new ObservableCollection<Component>();
-                    _LootBag.CollectionChanged += this.OnLootBagChanged;
+                    _LootBag = new ObservableCollection<ItemViewModel>();
                 }
                 return _LootBag;
             }
         }
 
-        void OnLootBagChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            //if (e.NewItems != null && e.NewItems.Count != 0)
-            //    foreach (Component item in e.NewItems)
-            //        itemroller.RequestClose += () => this.ItemRollers.Remove(sender as ItemRollerViewModel);
-
-            //if (e.OldItems != null && e.OldItems.Count != 0)
-            //    foreach (ItemRollerViewModel itemroller in e.OldItems)
-            //        itemroller.RequestClose -= () => this.ItemRollers.Remove(sender as ItemRollerViewModel);
-        }
-
-
-
         RelayCommand _lootCommand;
-        public ICommand lootCommand
+        public ICommand LootCommand
         {
             get
             {
@@ -103,9 +89,27 @@ namespace LewtzGUI.ViewModel
         public void RollLoot()
         {
             var baseTable = baseRepoToRollFrom.DatabaseContext.GetTableFromString("treasure table");
-            var lootBag = baseRepoToRollFrom.RollTableLoot(baseTable);
+            var loot = baseRepoToRollFrom.RollTableLoot(baseTable);
+
+            LootBag.Clear();
+            foreach(var item in loot)
+            {
+                LootBag.Add(new ItemViewModel(item));
+            }
+            OnPropertyChanged("LootBag");
         }
 
+        public void OnLootBagChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            if (e.NewItems != null && e.NewItems.Count != 0)
+                foreach (ItemViewModel item in e.NewItems)
+                {
+
+                }
+
+            if (e.OldItems != null && e.OldItems.Count != 0)
+                foreach (ItemViewModel itemroller in e.OldItems) { }
+        }
 
         RelayCommand _closeCommand;
         public ICommand CloseCommand

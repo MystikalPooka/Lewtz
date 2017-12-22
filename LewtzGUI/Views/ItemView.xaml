@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="LewtzGUI.Views.ItemView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LewtzGUI.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="300">
+    
+    <GroupBox MinHeight="60" MinWidth="75">
+        <GroupBox.Header>
+            <TextBox Margin="0,2,1,2" MinWidth="25" Text="{Binding ItemName}"/>
+        </GroupBox.Header>
+        <StackPanel DataContext="{Binding Item}" Orientation="Vertical" Height="auto">
+            <TextBlock Text="NSIS" FontSize="30"/>
+            <TextBlock Text="{Binding Cost}"/>
+        </StackPanel>
+    </GroupBox>
+</UserControl>

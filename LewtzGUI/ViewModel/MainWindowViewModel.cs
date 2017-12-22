@@ -18,7 +18,6 @@ namespace LewtzGUI.ViewModel
                 if (_ItemRollers == null)
                 {
                     _ItemRollers = new ObservableCollection<ItemRollerViewModel>();
-                    _ItemRollers.CollectionChanged += this.OnItemRollersChanged;
                 }
                 return _ItemRollers;
             }
@@ -48,17 +47,36 @@ namespace LewtzGUI.ViewModel
                 if (_removeLastRoller == null)
                 {
                     _removeLastRoller = new RelayCommand(
-                       param => RemoveLastItemRoller(),
-                       param => true
+                       param => ItemRollers.RemoveAt(ItemRollers.Count - 1),
+                       param => (ItemRollers.Count > 0)
                        );
                 }
                 return _removeLastRoller;
             }
         }
 
-        void RemoveLastItemRoller()
+        RelayCommand _rollAllLootCommand;
+        public ICommand RollAllLootCommand
         {
-            if (_ItemRollers.Count > 0) ItemRollers[_ItemRollers.Count - 1].Close();
+            get
+            {
+                if (_rollAllLootCommand == null)
+                {
+                    _rollAllLootCommand = new RelayCommand(
+                       param => RollAllLoot(),
+                       param => (ItemRollers.Count > 0)
+                       );
+                }
+                return _rollAllLootCommand;
+            }
+        }
+
+        void RollAllLoot()
+        {
+            foreach(var hoard in _ItemRollers)
+            {
+                hoard.RollLoot();
+            }
         }
 
         void AddNewItemRoller()
@@ -68,22 +86,6 @@ namespace LewtzGUI.ViewModel
                 MainDBContext = new TableRepository();
             }
             this.ItemRollers.Add(new ItemRollerViewModel(MainDBContext));
-        }
-
-        void OnItemRollersChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            if (e.NewItems != null && e.NewItems.Count != 0)
-                foreach (ItemRollerViewModel itemroller in e.NewItems)
-                    itemroller.RequestClose += () => this.ItemRollers.Remove(sender as ItemRollerViewModel);
-
-            if (e.OldItems != null && e.OldItems.Count != 0)
-                foreach (ItemRollerViewModel itemroller in e.OldItems)
-                    itemroller.RequestClose -= () => this.ItemRollers.Remove(sender as ItemRollerViewModel);
-        }
-
-        void OnItemRollerRequestClose(object sender, EventArgs e)
-        {
-            this.ItemRollers.Remove(sender as ItemRollerViewModel);
         }
     }
 }

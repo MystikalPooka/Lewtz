@@ -25,6 +25,7 @@ namespace LewtzGUI.Data_Access
         {
             var lootBag = new GetLootVisitor();
             tableToRoll.Accept(lootBag);
+            Console.WriteLine("Loot: ");
             return lootBag.GetLootBag();
         }
     }

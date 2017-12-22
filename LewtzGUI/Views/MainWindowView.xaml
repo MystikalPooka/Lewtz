@@ -7,6 +7,40 @@
         xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
         mc:Ignorable="d"
         Height="525" Width="725">
+
+    <UserControl.Resources>
+
+        <DataTemplate x:Key="ItemRoller" DataType="{x:Type vm:ItemRollerViewModel}">
+            <vw:HoardControl/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ItemRollerList">
+            <ItemsControl ItemsSource="{Binding ItemRollers}"
+                          ItemTemplate="{DynamicResource ItemRoller}">
+            </ItemsControl>
+        </DataTemplate>
+
+        <DataTemplate x:Key="LootBags">
+            <GroupBox Header='{Binding HoardName}'>
+                <ItemsControl ItemsSource="{Binding LootBag}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="{x:Type vm:ItemViewModel}">
+                            <GroupBox MinHeight="60" MinWidth="75">
+                                <GroupBox.Header>
+                                    <TextBlock Margin="0,2,1,2" MinWidth="25" Text="{Binding ItemName}"/>
+                                </GroupBox.Header>
+                                <StackPanel Orientation="Vertical" Height="auto">
+                                    <TextBlock Text="{Binding ItemCost, StringFormat='Cost: {0}'}" FontSize="12"/>
+                                    <TextBlock Text="{Binding ItemBook, StringFormat='Book: {0}'}" FontSize="12"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </GroupBox>
+        </DataTemplate>
+        
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -15,31 +49,27 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
             <Button Command="{Binding AddItemRoller}" Width="auto" Height="auto">Add Hoard</Button>
-            <Button Command="{Binding OnItemRollerRequestClose}" Width="auto" Height="auto">Remove Hoard</Button>
+            <Button Command="{Binding RemoveItemRoller}" Width="auto" Height="auto">Remove Hoard</Button>
+            <Button Command="{Binding RollAllLootCommand}" Width="auto" Height="auto">Loot All Hoards</Button>
         </StackPanel>
 
-        <ScrollViewer Grid.Column="0" Grid.Row="1" Height="auto" VerticalScrollBarVisibility="Auto">
-            <ItemsControl ItemsSource="{Binding ItemRollers}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel"
-                                  DataType="{x:Type t:ItemRollerViewModel}">
-                        <vw:HoardControl/>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
+        <ScrollViewer DataContext="{Binding ItemRollers}" Grid.Column="0" Grid.Row="1" Height="auto" VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding}"
+                          ItemTemplate="{DynamicResource ItemRoller}"/>
         </ScrollViewer>
 
-        <GridSplitter Grid.Column="1" Grid.RowSpan="2" 
+        <GridSplitter Grid.Column="1" Grid.RowSpan="2"
                       VerticalAlignment="Stretch" Width="2"
                       HorizontalAlignment="Center"
                       BorderBrush="DarkSlateGray" Background="Black"/>
 
-
-        <TextBlock></TextBlock>
+        <ItemsControl Grid.Column="2" Grid.Row="1"
+                      ItemsSource="{Binding ItemRollers}" 
+                      ItemTemplate="{DynamicResource LootBags}"/>
     </Grid>
 </UserControl>
