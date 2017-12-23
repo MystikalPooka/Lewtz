@@ -77,6 +77,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\InvertedWrapPanel.cs" />
+    <Compile Include="Controls\SmartWrapPanel.cs" />
     <Compile Include="Data Access\TableRepository.cs" />
     <Compile Include="ViewModel\CommandViewModel.cs" />
     <Compile Include="ViewModel\ItemRollerViewModel.cs" />

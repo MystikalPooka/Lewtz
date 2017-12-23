@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vw="clr-namespace:LewtzGUI.Views"
         xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
+        xmlns:controls="clr-namespace:LewtzGUI.Controls"
         mc:Ignorable="d"
         Height="525" Width="725">
 
@@ -12,12 +13,6 @@
 
         <DataTemplate x:Key="ItemRoller" DataType="{x:Type vm:ItemRollerViewModel}">
             <vw:HoardControl/>
-        </DataTemplate>
-
-        <DataTemplate x:Key="ItemRollerList">
-            <ItemsControl ItemsSource="{Binding ItemRollers}"
-                          ItemTemplate="{DynamicResource ItemRoller}">
-            </ItemsControl>
         </DataTemplate>
 
         <DataTemplate x:Key="LootBags">
@@ -49,7 +44,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="400"/>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
@@ -58,7 +53,8 @@
             <Button Command="{Binding RollAllLootCommand}" Width="auto" Height="auto">Loot All Hoards</Button>
         </StackPanel>
 
-        <ScrollViewer DataContext="{Binding ItemRollers}" Grid.Column="0" Grid.Row="1" Height="auto" VerticalScrollBarVisibility="Auto">
+        <ScrollViewer DataContext="{Binding ItemRollers}" Grid.Column="0" Grid.Row="1" 
+                      Height="auto" VerticalScrollBarVisibility="Auto">
             <ItemsControl ItemsSource="{Binding}"
                           ItemTemplate="{DynamicResource ItemRoller}"/>
         </ScrollViewer>
@@ -68,8 +64,20 @@
                       HorizontalAlignment="Center"
                       BorderBrush="DarkSlateGray" Background="Black"/>
 
-        <ItemsControl Grid.Column="2" Grid.Row="1"
-                      ItemsSource="{Binding ItemRollers}" 
-                      ItemTemplate="{DynamicResource LootBags}"/>
+        <ScrollViewer Grid.Column="2" Grid.Row="1" 
+                      Height="275" Width="460">
+            <ItemsControl Height="auto" Width="470" 
+                          ItemsSource="{Binding ItemRollers}" 
+                          ItemTemplate="{DynamicResource LootBags}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <controls:SmartWrapPanel ScrollViewer.CanContentScroll="True" 
+                                                 MinWidth="100" ItemWidth="100" IsItemsHost="True" Orientation="Horizontal" 
+                                                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="470"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
+
     </Grid>
 </UserControl>
