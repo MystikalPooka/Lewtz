@@ -8,8 +8,13 @@ namespace ItemRoller.Data_Structure
     public class MagicItem : Item
     {
         private List<Component> appliedAbilities;
-        public IReadOnlyList<Component> Abilities => appliedAbilities as IReadOnlyList<Component>;
-
+        public List<Component> Abilities
+        {
+            get
+            {
+                return appliedAbilities;
+            }            
+        }
         protected MagicItem(MagicItem item)
         {
             appliedAbilities = new List<Component>();

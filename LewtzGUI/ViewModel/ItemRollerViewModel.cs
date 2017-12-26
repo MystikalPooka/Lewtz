@@ -1,4 +1,4 @@
-﻿using ItemRoller.Data_Structure;
+﻿using ItemRoller.Visitors;
 using LewtzGUI.Data_Access;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -27,6 +27,21 @@ namespace LewtzGUI.ViewModel
             {
                 _HoardName = value;
                 OnPropertyChanged("HoardName");
+            }
+        }
+
+        private int _NumRolls = 1;
+        public int NumRolls
+        {
+            get
+            {
+                return _NumRolls;
+            }
+
+            set
+            {
+                _NumRolls = value;
+                OnPropertyChanged("NumRolls");
             }
         }
 
@@ -71,6 +86,33 @@ namespace LewtzGUI.ViewModel
             }
         }
 
+        public int ItemCost;
+
+        public int NumCopper
+        {
+            get
+            {
+                return ItemCost % 10;
+            }
+        }
+
+        public int NumSilver
+        {
+            get
+            {
+                return (ItemCost / 10) % 10;
+            }
+        }
+
+        public int NumGold
+        {
+            get
+            {
+                return (ItemCost / 100) % 10;
+            }
+        }
+
+
         RelayCommand _lootCommand;
         public ICommand LootCommand
         {
@@ -88,13 +130,21 @@ namespace LewtzGUI.ViewModel
 
         public void RollLoot()
         {
-            var baseTable = baseRepoToRollFrom.DatabaseContext.GetTableFromString("treasure table");
-            var loot = baseRepoToRollFrom.RollTableLoot(baseTable);
-
+            var dbContext = baseRepoToRollFrom.DatabaseContext;
+            var baseTable = dbContext.GetTableFromString("treasure table");
             LootBag.Clear();
-            foreach(var item in loot)
+            for (int i = 0; i < NumRolls; ++i)
             {
-                LootBag.Add(new ItemViewModel(item));
+                var loot = baseRepoToRollFrom.RollTableLoot(baseTable);
+
+                foreach (var item in loot)
+                {
+                    if (item.Name != "")
+                    {
+                        item.Accept(new BuildItemVisitor(dbContext));
+                        LootBag.Add(new ItemViewModel(item));
+                    }
+                } 
             }
             OnPropertyChanged("LootBag");
         }
@@ -104,11 +154,14 @@ namespace LewtzGUI.ViewModel
             if (e.NewItems != null && e.NewItems.Count != 0)
                 foreach (ItemViewModel item in e.NewItems)
                 {
-
+                    ItemCost += item.ItemCost;
                 }
 
             if (e.OldItems != null && e.OldItems.Count != 0)
-                foreach (ItemViewModel itemroller in e.OldItems) { }
+                foreach (ItemViewModel item in e.OldItems)
+                {
+                    ItemCost -= item.ItemCost;
+                }
         }
 
         RelayCommand _closeCommand;

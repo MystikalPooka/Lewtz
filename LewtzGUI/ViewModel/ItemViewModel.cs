@@ -1,4 +1,5 @@
 ﻿using ItemRoller.Data_Structure;
+using System;
 using System.Collections.ObjectModel;
 
 namespace LewtzGUI.ViewModel
@@ -20,6 +21,30 @@ namespace LewtzGUI.ViewModel
             get
             {
                 return _ViewItem.Book;
+            }
+        }
+
+        public int NumCopper
+        {
+            get
+            {
+                return ItemCost % 10; 
+            }
+        }
+
+        public int NumSilver
+        {
+            get
+            {
+                return (ItemCost / 10 ) % 10;
+            }
+        }
+
+        public int NumGold
+        {
+            get
+            {
+                return (int)Math.Floor(ItemCost / 100.0);
             }
         }
 

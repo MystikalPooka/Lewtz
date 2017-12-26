@@ -20,6 +20,7 @@ namespace ItemRoller.Visitors
 
         public void Visit(MagicItem item)
         {
+            if (null == item || null == buildDBContext) return;
             var builder = new MagicItemBuilder(buildDBContext);
             builder.Build(item);
         }

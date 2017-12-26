@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LewtzGUI"
         mc:Ignorable="d"
         xmlns:vw="clr-namespace:LewtzGUI.Views"
-        Title="MainWindow" Height="350" Width="725" SizeToContent="Manual">
+        Title="MainWindow" Height="350" Width="725">
     <Window.Resources>
         <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel" 
             DataType="{x:Type t:MainWindowViewModel}">

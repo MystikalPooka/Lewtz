@@ -39,16 +39,15 @@ namespace ItemRoller.Data_Structure
 
         private void RollSpecialAbilities(Item item)
         {
-            var abilitiesToRoll =
-                                from ability in (item as MagicItem).Abilities
-                                where ability.Name.ToLower().Contains("special abilities")
-                                select ability;
-
+            var mItem = item as MagicItem;
+            if (mItem.Abilities.Count <= 0) return;
+            int abilityCount = mItem.Abilities.Where(x=> (x != null) && null != x.Name && x.Name.Contains("special abilities")).Count();
 
             var abilitiesToAdd = new List<Component>();
-            foreach (Component ability in abilitiesToRoll)
+            for(int i = 0; i < abilityCount; ++i)
             {
-                var typeToRoll = item.Types & ~(ItemTypes.Magic | ItemTypes.Magic_Major | ItemTypes.Magic_Medium | ItemTypes.Magic_Minor);
+                var typeToRoll = item.Types & ~(ItemTypes.Magic | ItemTypes.Magic_Major | 
+                                                ItemTypes.Magic_Medium | ItemTypes.Magic_Minor);
                 var typeString = typeToRoll.ToString().ToLower() + " special abilities";
                 var specialRollTable = DBContext.GetTypeSortedTableFromString(typeString, item.Types);
 
@@ -60,7 +59,7 @@ namespace ItemRoller.Data_Structure
                 }
             }
             (item as MagicItem).AddAbilities(abilitiesToAdd);
-            (item as MagicItem).RemoveAbilities(k => k.Name.ToLower().Contains("special abilities"));
+            (item as MagicItem).RemoveAbilities(x => (x != null) && null != x.Name && x.Name.Contains("special abilities"));
         }
     }
 }

@@ -9,13 +9,25 @@
     <GroupBox>
         <GroupBox.Header>
             <StackPanel Orientation="Horizontal">
-                <ComboBox Margin="0,2,1,2" VerticalAlignment="Center">
-                    <ComboBoxItem>1</ComboBoxItem>
+                <ComboBox Margin="0,2,1,2" VerticalAlignment="Center" SelectedIndex="0">
+                    <ComboBoxItem>Level 1</ComboBoxItem>
+                    <ComboBoxItem>Level 2</ComboBoxItem>
+                    <ComboBoxItem>Level 3</ComboBoxItem>
+                    <ComboBoxItem>Level 4</ComboBoxItem>
+                    <ComboBoxItem>Level 5</ComboBoxItem>
+                    <ComboBoxItem>Level 6</ComboBoxItem>
+                    <ComboBoxItem>Level 7</ComboBoxItem>
+                    <ComboBoxItem>Level 8</ComboBoxItem>
+                    <ComboBoxItem>Level 9</ComboBoxItem>
+                    <ComboBoxItem>Level 10</ComboBoxItem>
                 </ComboBox>
                 <TextBox Margin="5,2,1,2" MinWidth="25" Text="{Binding HoardName}"/>
             </StackPanel>
+            
         </GroupBox.Header>
         <StackPanel Orientation="Horizontal" MaxHeight="60">
+            <TextBox Margin="2,0,2,0" MinWidth="35" Text="{Binding NumRolls}" 
+                         ToolTip="Number of timeS to loot this hoard" HorizontalAlignment="Center"/>
             <ComboBox TextElement.FontSize="13" SelectedIndex="0">
                 <ComboBoxItem>1x Coins</ComboBoxItem>
                 <ComboBoxItem>1.5x Coins</ComboBoxItem>
