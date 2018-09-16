@@ -27,7 +27,7 @@
         </GroupBox.Header>
         <StackPanel Orientation="Horizontal" MaxHeight="60">
             <TextBox Margin="2,0,2,0" MinWidth="35" Text="{Binding NumRolls}" 
-                         ToolTip="Number of timeS to loot this hoard" HorizontalAlignment="Center"/>
+                         ToolTip="Number of times to loot this hoard" HorizontalAlignment="Center"/>
             <ComboBox TextElement.FontSize="13" SelectedIndex="0">
                 <ComboBoxItem>1x Coins</ComboBoxItem>
                 <ComboBoxItem>1.5x Coins</ComboBoxItem>

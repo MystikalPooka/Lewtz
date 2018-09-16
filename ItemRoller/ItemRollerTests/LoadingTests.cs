@@ -11,11 +11,11 @@ namespace ItemRollerTests
         [TestMethod]
         public void LoadTables()
         {
-            TableRepository.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
-            TableRepository.LoadSingleFile(@"..\..\..\Tables\magic base.json", new JSONLoader());
-            TableRepository.LoadAllMatchingStringFromDirectory(@"..\..\..\Tables", @"*special abilities*", new JSONLoader());
+            TableDatabase db = new TableDatabase();
 
-            var baseTable = TableRepository.GetTableFromString("treasure table");
+            db.LoadSingleFile(@"..\..\..\Tables\treasure table.json", new JSONLoader());
+
+            var baseTable = db.GetTableFromString("treasure table");
             Assert.IsNotNull(baseTable);
         }
     }

@@ -69,7 +69,6 @@ namespace ItemRoller.Loaders
                     compToAdd = obj.ToObject<Table>();
                     var tableName = compToAdd.Name.Replace(", roll again", "");
                     string newFilename = _filename.Replace(tableToLoad.Name.ToLower(), tableName);
-                    //new JSONLoader().LoadTableFromFile(newFilename, compToAdd as Table);
                     compToAdd = new JSONLoader().LoadTableFromFile(newFilename);
                     if(compToAdd == null)
                     {
