@@ -9,3 +9,5 @@ debug/
 *.user
 *.config
 TestTables/
+*/Debug/
+*.g.*
