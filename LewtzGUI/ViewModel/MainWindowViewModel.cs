@@ -4,6 +4,8 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Windows.Input;
 using LewtzGUI.Controls;
+using System.ComponentModel;
+using System.Windows;
 
 namespace LewtzGUI.ViewModel
 {
@@ -11,14 +13,15 @@ namespace LewtzGUI.ViewModel
     {
         TableRepository MainDBContext;
 
-        ObservableCollection<ItemRollerViewModel> _ItemRollers;
-        public ObservableCollection<ItemRollerViewModel> ItemRollers
+
+        private BindingList<ItemRollerViewModel> _ItemRollers;
+        public BindingList<ItemRollerViewModel> ItemRollers
         {
             get
             {
                 if (_ItemRollers == null)
                 {
-                    _ItemRollers = new ObservableCollection<ItemRollerViewModel>();
+                    _ItemRollers = new BindingList<ItemRollerViewModel>();
                 }
                 return _ItemRollers;
             }
@@ -71,6 +74,7 @@ namespace LewtzGUI.ViewModel
                 return _rollAllLootCommand;
             }
         }
+
 
         void RollAllLoot()
         {

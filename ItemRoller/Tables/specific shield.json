@@ -1,0 +1,28 @@
+[{
+        "name": "Darkwood Buckler",
+        "book": "DMG221",
+        "cost": 20500,
+        "probability_minor": 30,
+        "probability_medium": 20,
+        "type": "magic item",
+        "item types": "Shield"
+    },
+    {
+        "name": "Darkwood Shield",
+        "book": "DMG221",
+        "cost": 25700,
+        "probability_minor": 80,
+        "probability_medium": 45,
+        "type": "magic item",
+        "item types": "Shield"
+    },
+    {
+        "name": "Mithril Heavy Shield",
+        "book": "DMG221",
+        "cost": 102000,
+        "probability_minor": 95,
+        "probability_medium": 70,
+        "type": "magic item",
+        "item types": "Shield"
+    }
+]

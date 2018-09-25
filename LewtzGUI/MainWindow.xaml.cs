@@ -1,5 +1,6 @@
 ﻿using LewtzGUI.ViewModel;
 using System.Windows;
+using Xceed.Wpf.Toolkit.Primitives;
 
 namespace LewtzGUI
 {

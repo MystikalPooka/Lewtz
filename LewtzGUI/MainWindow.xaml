@@ -6,25 +6,35 @@
         xmlns:local="clr-namespace:LewtzGUI"
         mc:Ignorable="d"
         xmlns:vw="clr-namespace:LewtzGUI.Views"
-        Title="MainWindow" Height="350" Width="725">
+        Title="LEWT THAT SHIT" 
+        Name="mainWindow"
+        Height="auto" Width="auto"
+        ResizeMode="CanResizeWithGrip">
     <Window.Resources>
         <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel" 
             DataType="{x:Type t:MainWindowViewModel}">
             <vw:MainWindowView/>
-            </DataTemplate>
+        </DataTemplate>
     </Window.Resources>
-    
-    <StackPanel>
+
+    <Grid Name="PrimaryContentPanel">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <Menu>
             <MenuItem Header="_File">
                 <MenuItem Header="_Exit" 
-                    Command="{Binding Path=CloseCommand}" />
+                    Command="{Binding CloseCommand}"/>
             </MenuItem>
             <MenuItem Header="_Edit" />
             <MenuItem Header="_Options" />
             <MenuItem Header="_Help" />
         </Menu>
-        <ContentControl Content="{Binding}"/>
-    </StackPanel>
+        <ContentControl Content="{Binding}" Name="PrimaryContentControl" Grid.Row="2"/>
+    </Grid>
 </Window>
     

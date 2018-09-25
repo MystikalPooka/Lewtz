@@ -20,7 +20,9 @@ namespace LewtzGUI.Controls
           typeof(SmartWrapPanel),
           new FrameworkPropertyMetadata(Double.NaN,
                   FrameworkPropertyMetadataOptions.AffectsArrange |
-                  FrameworkPropertyMetadataOptions.AffectsMeasure));
+                  FrameworkPropertyMetadataOptions.AffectsMeasure |
+                  FrameworkPropertyMetadataOptions.AffectsParentMeasure |
+                  FrameworkPropertyMetadataOptions.AffectsParentArrange));
 
         /// <summary>
         /// Gets or sets the height to attempt to be.  If any child is taller than this, will use the child's height.

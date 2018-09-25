@@ -16,13 +16,13 @@ using System.Windows.Shapes;
 namespace LewtzGUI.Views
 {
     /// <summary>
-    /// Interaction logic for ItemView.xaml
+    /// Interaction logic for ItemControl.xaml
     /// </summary>
-    public partial class ItemView : UserControl
+    public partial class ItemControl : UserControl
     {
-        public ItemView()
+        public ItemControl()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
     }
 }

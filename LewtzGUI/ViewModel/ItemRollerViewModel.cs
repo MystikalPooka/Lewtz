@@ -1,9 +1,9 @@
 ﻿using ItemRoller.Visitors;
 using LewtzGUI.Data_Access;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace LewtzGUI.ViewModel
 {
@@ -13,6 +13,39 @@ namespace LewtzGUI.ViewModel
         public ItemRollerViewModel(TableRepository repo)
         {
             baseRepoToRollFrom = repo;
+        }
+
+        private Brush _LootBackgroundBrush;
+        public Brush LootBackgroundBrush
+        {
+            get
+            {
+                if (_LootBackgroundBrush == null)
+                {
+                    if(LootBackColor == null)
+                        LootBackColor = Colors.LightSlateGray;
+                    else
+                        _LootBackgroundBrush = new SolidColorBrush(LootBackColor);
+                }
+                return _LootBackgroundBrush;
+            }
+            set
+            {
+                _LootBackgroundBrush = value;
+                OnPropertyChanged("LootBackgroundBrush");
+            }
+        }
+
+        private Color _LootBackColor;
+        public Color LootBackColor
+        {
+            get => _LootBackColor;
+            set
+            {
+                _LootBackColor = value;
+                LootBackgroundBrush = new SolidColorBrush(_LootBackColor);
+                OnPropertyChanged("LootBackColor");
+            }
         }
 
         private string _HoardName = "new hoard";
@@ -73,45 +106,18 @@ namespace LewtzGUI.ViewModel
             }
         }
 
-        private ObservableCollection<ItemViewModel> _LootBag;
-        public ObservableCollection<ItemViewModel> LootBag
+        private BindingList<ItemViewModel> _LootBag;
+        public BindingList<ItemViewModel> LootBag
         {
             get
             {
                 if (_LootBag == null)
                 {
-                    _LootBag = new ObservableCollection<ItemViewModel>();
+                    _LootBag = new BindingList<ItemViewModel>();
                 }
                 return _LootBag;
             }
         }
-
-        public int ItemCost;
-
-        public int NumCopper
-        {
-            get
-            {
-                return ItemCost % 10;
-            }
-        }
-
-        public int NumSilver
-        {
-            get
-            {
-                return (ItemCost / 10) % 10;
-            }
-        }
-
-        public int NumGold
-        {
-            get
-            {
-                return (ItemCost / 100) % 10;
-            }
-        }
-
 
         RelayCommand _lootCommand;
         public ICommand LootCommand
@@ -143,25 +149,10 @@ namespace LewtzGUI.ViewModel
                     {
                         item.Accept(new BuildItemVisitor(dbContext));
                         LootBag.Add(new ItemViewModel(item));
+                        this.OnPropertyChanged("LootBag");
                     }
                 } 
             }
-            OnPropertyChanged("LootBag");
-        }
-
-        public void OnLootBagChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            if (e.NewItems != null && e.NewItems.Count != 0)
-                foreach (ItemViewModel item in e.NewItems)
-                {
-                    ItemCost += item.ItemCost;
-                }
-
-            if (e.OldItems != null && e.OldItems.Count != 0)
-                foreach (ItemViewModel item in e.OldItems)
-                {
-                    ItemCost -= item.ItemCost;
-                }
         }
 
         RelayCommand _closeCommand;
@@ -179,5 +170,7 @@ namespace LewtzGUI.ViewModel
                 return _closeCommand;
             }
         }
+
+     
     }
 }

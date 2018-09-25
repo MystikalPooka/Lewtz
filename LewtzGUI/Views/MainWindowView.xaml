@@ -6,68 +6,19 @@
         xmlns:vw="clr-namespace:LewtzGUI.Views"
         xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
         xmlns:controls="clr-namespace:LewtzGUI.Controls"
-        mc:Ignorable="d"
-        Height="525" Width="725">
+        Name="mainWindowView"
+        mc:Ignorable="d">
 
-    <UserControl.Resources>
-
-        <DataTemplate x:Key="ItemRoller" DataType="{x:Type vm:ItemRollerViewModel}">
-            <vw:HoardControl/>
-        </DataTemplate>
-
-        <DataTemplate x:Key="LootBags">
-            <GroupBox Margin="0,-2,0,0" BorderBrush="Black" BorderThickness="2">
-                <GroupBox.Header>
-                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" 
-                               Text='{Binding HoardName}' FontWeight="Bold"/>
-                </GroupBox.Header> 
-                <ItemsControl ItemsSource="{Binding LootBag}">
-                    <ItemsControl.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <controls:SmartWrapPanel IsItemsHost="True" Orientation="Horizontal" 
-                                                     HorizontalAlignment="Left" MaxWidth="380"/>
-                        </ItemsPanelTemplate>
-                    </ItemsControl.ItemsPanel>
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate DataType="{x:Type vm:ItemViewModel}">
-                            <GroupBox MinHeight="60" MinWidth="75">
-                                <GroupBox.Header>
-                                    <TextBlock Margin="0,2,1,2" MinWidth="25" Text="{Binding ItemName}" 
-                                               FontWeight="Bold" FontSize="11"/>
-                                </GroupBox.Header>
-                                <Expander Margin="0,-4,0,-2" Height="auto" Header="Details"
-                                          FontSize="10" FontStyle="Italic">
-                                    <StackPanel Orientation="Vertical" Height="auto">
-                                        <TextBlock FontSize="11" FontStyle="Normal">
-                                            <TextBlock.Text>
-                                                <MultiBinding StringFormat="{}   Cost: {0}g{1}s{2}c">
-                                                    <Binding Path="NumGold"/>
-                                                    <Binding Path="NumSilver"/>
-                                                    <Binding Path="NumCopper"/>
-                                                </MultiBinding>
-                                            </TextBlock.Text>
-                                        </TextBlock>
-                                        <TextBlock Text="{Binding ItemBook, StringFormat='   Book: {0}'}"
-                                                   FontSize="11" FontStyle="Normal"/>
-                                    </StackPanel>
-                                </Expander>
-                            </GroupBox>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-            </GroupBox>
-        </DataTemplate>
-        
-    </UserControl.Resources>
-    <Grid>
+    <Grid Height="{Binding ActualHeight, ElementName=PrimaryContentControl}" 
+          Width="{Binding ActualWidth, ElementName=PrimaryContentControl}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="275"/>
+            <RowDefinition Height="auto" MinHeight="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type vw:HoardControl}}}"/>
+            <RowDefinition Height="*" Name="LootBagRow"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" MinWidth="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type vw:HoardControl}}}"/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="380"/>
+            <ColumnDefinition Width="*" Name="LootBagColumn"/>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
@@ -77,30 +28,30 @@
         </StackPanel>
 
         <ScrollViewer DataContext="{Binding ItemRollers}" Grid.Column="0" Grid.Row="1" 
-                      Height="auto" VerticalScrollBarVisibility="Auto">
+                  VerticalAlignment="Top"
+                   VerticalScrollBarVisibility="Auto">
             <ItemsControl ItemsSource="{Binding}"
                           ItemTemplate="{DynamicResource ItemRoller}"/>
         </ScrollViewer>
 
         <GridSplitter Grid.Column="1" Grid.RowSpan="2"
-                      VerticalAlignment="Stretch" Width="2"
-                      HorizontalAlignment="Center"
+                      VerticalAlignment="Stretch" Width="4"
+                      HorizontalAlignment="Center" Margin="2"
                       BorderBrush="DarkSlateGray" Background="Black"/>
 
-        <ScrollViewer Grid.Column="2" Grid.Row="1" 
-                      Height="275" Width="379"
-                      VerticalScrollBarVisibility="Hidden">
-            <ItemsControl Height="auto" Width="379" Grid.Column="2" Grid.Row="1"  
-                          ItemsSource="{Binding ItemRollers}" 
+
+        <ScrollViewer DataContext="{Binding ItemRollers}" Grid.Row="1" Grid.Column="2" 
+                      VerticalScrollBarVisibility="Auto"
+                      VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <ItemsControl ItemsSource="{Binding}" Background="White"
                           ItemTemplate="{DynamicResource LootBags}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <controls:SmartWrapPanel ScrollViewer.CanContentScroll="True" 
-                                                 IsItemsHost="True" Orientation="Horizontal" 
-                                                 HorizontalAlignment="Left" Width="378"/>
+                        <WrapPanel Background="LightSlateGray" Margin="3" IsItemsHost="True"/>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
         </ScrollViewer>
+
     </Grid>
 </UserControl>

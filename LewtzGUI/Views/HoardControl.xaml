@@ -1,52 +1,72 @@
-﻿<UserControl x:Class="LewtzGUI.Views.HoardControl"
+﻿<UserControl
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:local="clr-namespace:LewtzGUI.Views"
+             xmlns:LewtzGUI="clr-namespace:LewtzGUI" x:Name="hoardControl" x:Class="LewtzGUI.Views.HoardControl"
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="375">
-    <GroupBox>
+
+    <GroupBox Name="SettingsGroup">
         <GroupBox.Header>
             <StackPanel Orientation="Horizontal">
                 <ComboBox Margin="0,2,1,2" VerticalAlignment="Center" SelectedIndex="0">
-                    <ComboBoxItem>Level 1</ComboBoxItem>
-                    <ComboBoxItem>Level 2</ComboBoxItem>
-                    <ComboBoxItem>Level 3</ComboBoxItem>
-                    <ComboBoxItem>Level 4</ComboBoxItem>
-                    <ComboBoxItem>Level 5</ComboBoxItem>
-                    <ComboBoxItem>Level 6</ComboBoxItem>
-                    <ComboBoxItem>Level 7</ComboBoxItem>
-                    <ComboBoxItem>Level 8</ComboBoxItem>
-                    <ComboBoxItem>Level 9</ComboBoxItem>
-                    <ComboBoxItem>Level 10</ComboBoxItem>
+                    <ComboBoxItem Content="Level 1"/>
+                    <ComboBoxItem Content="Level 2"/>
+                    <ComboBoxItem Content="Level 3"/>
+                    <ComboBoxItem Content="Level 4"/>
+                    <ComboBoxItem Content="Level 5"/>
+                    <ComboBoxItem Content="Level 6"/>
+                    <ComboBoxItem Content="Level 7"/>
+                    <ComboBoxItem Content="Level 8"/>
+                    <ComboBoxItem Content="Level 9"/>
+                    <ComboBoxItem Content="Level 10"/>
                 </ComboBox>
                 <TextBox Margin="5,2,1,2" MinWidth="25" Text="{Binding HoardName}"/>
+
+                <ComboBox Name="LootColorPicker" Margin="2,0,0,0" ItemsSource="{Binding Source={StaticResource colorPropertiesOdp}}" 
+                        ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                        ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                        SelectedValue="{Binding LootBackColor, Mode=TwoWay, NotifyOnTargetUpdated=True}" SelectedValuePath="Name"
+                        Background="{Binding LootBackgroundBrush, BindsDirectlyToSource=True, NotifyOnTargetUpdated=True}">
+                    <ComboBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel MaxWidth="{Binding ActualWidth, ElementName=LootPanel, Mode=OneWay}" HorizontalAlignment="Center"/>
+                        </ItemsPanelTemplate>
+                    </ComboBox.ItemsPanel>
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Rectangle Fill="{Binding Name}" Stroke="Black" StrokeThickness="1" Margin="-1" Height="25" Width="100"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
             </StackPanel>
-            
+
         </GroupBox.Header>
-        <StackPanel Orientation="Horizontal" MaxHeight="60">
+        <StackPanel Orientation="Horizontal" MaxHeight="60" Name="LootPanel">
             <TextBox Margin="2,0,2,0" MinWidth="35" Text="{Binding NumRolls}" 
                          ToolTip="Number of times to loot this hoard" HorizontalAlignment="Center"/>
             <ComboBox TextElement.FontSize="13" SelectedIndex="0">
-                <ComboBoxItem>1x Coins</ComboBoxItem>
-                <ComboBoxItem>1.5x Coins</ComboBoxItem>
-                <ComboBoxItem>2x Coins</ComboBoxItem>
-                <ComboBoxItem>4x Coins</ComboBoxItem>
+                <ComboBoxItem Content="1x Coins"/>
+                <ComboBoxItem Content="1.5x Coins"/>
+                <ComboBoxItem Content="2x Coins"/>
+                <ComboBoxItem Content="4x Coins"/>
             </ComboBox>
             <ComboBox TextElement.FontSize="13" SelectedIndex="0">
-                <ComboBoxItem>1x Goods</ComboBoxItem>
-                <ComboBoxItem>1.5x Goods</ComboBoxItem>
-                <ComboBoxItem>2x Goods</ComboBoxItem>
-                <ComboBoxItem>4x Goods</ComboBoxItem>
+                <ComboBoxItem Content="1x Goods"/>
+                <ComboBoxItem Content="1.5x Goods"/>
+                <ComboBoxItem Content="2x Goods"/>
+                <ComboBoxItem Content="4x Goods"/>
             </ComboBox>
             <ComboBox TextElement.FontSize="13" SelectedIndex="0">
-                <ComboBoxItem>1x Items</ComboBoxItem>
-                <ComboBoxItem>1.5x Items</ComboBoxItem>
-                <ComboBoxItem>2x Items</ComboBoxItem>
-                <ComboBoxItem>4x Items</ComboBoxItem>
+                <ComboBoxItem Content="1x Items"/>
+                <ComboBoxItem Content="1.5x Items"/>
+                <ComboBoxItem Content="2x Items"/>
+                <ComboBoxItem Content="4x Items"/>
             </ComboBox>
-            <Button Command="{Binding LootCommand}">LOOT!</Button>
+            <Button Command="{Binding LootCommand}" Content="LOOT!"/>
         </StackPanel>
     </GroupBox>
 </UserControl>

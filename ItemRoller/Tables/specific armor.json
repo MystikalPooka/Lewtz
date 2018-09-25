@@ -1,104 +1,103 @@
-[
-	{
-	  "name":"Mithral Shirt",
-	  "book":"DMG220",
-	  "cost":110000,
-	  "probability_minor":50,
-	  "probability_medium":25,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Dragonhide Plate",
-	  "book":"DMG220",
-	  "cost":330000,
-	  "probability_minor":80,
-	  "probability_medium":45,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Elven Chain",
-	  "book":"DMG220",
-	  "cost":415000,
-	  "probability_minor":100,
-	  "probability_medium":57,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Rhino Hide",
-	  "book":"DMG220",
-	  "cost":516500,
-	  "probability_medium":67,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Adamantine Breastplate",
-	  "book":"DMG220",
-	  "cost":1020000,
-	  "probability_medium":82,
-	  "probability_major":10,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Dwarven Plate",
-	  "book":"DMG220",
-	  "cost":1650000,
-	  "probability_medium":97,
-	  "probability_major":20,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Banded Mail of Luck",
-	  "book":"DMG220",
-	  "cost":1890000,
-	  "probability_medium":100,
-	  "probability_major":32,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Celestial Armor",
-	  "book":"DMG220",
-	  "cost":2240000,
-	  "probability_major":50,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Plate Armor of the Deep",
-	  "book":"DMG220",
-	  "cost":2465000,
-	  "probability_major":60,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Breastplate of Command",
-	  "book":"DMG220",
-	  "cost":2540000,
-	  "probability_major":75,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Mithral Full Plate of Speed",
-	  "book":"DMG220",
-	  "cost":2650000,
-	  "probability_major":90,
-	  "type":"magic item",
-	  "item types":"Armor"
-	},
-	{
-	  "name":"Demon Armor",
-	  "book":"DMG220",
-	  "cost":5226000,
-	  "probability_major":100,
-	  "type":"magic item",
-	  "item types":"Armor"
-	}
+[{
+        "name": "Mithral Shirt",
+        "book": "DMG220",
+        "cost": 110000,
+        "probability_minor": 50,
+        "probability_medium": 25,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Dragonhide Plate",
+        "book": "DMG220",
+        "cost": 330000,
+        "probability_minor": 80,
+        "probability_medium": 45,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Elven Chain",
+        "book": "DMG220",
+        "cost": 415000,
+        "probability_minor": 100,
+        "probability_medium": 57,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Rhino Hide",
+        "book": "DMG220",
+        "cost": 516500,
+        "probability_medium": 67,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Adamantine Breastplate",
+        "book": "DMG220",
+        "cost": 1020000,
+        "probability_medium": 82,
+        "probability_major": 10,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Dwarven Plate",
+        "book": "DMG220",
+        "cost": 1650000,
+        "probability_medium": 97,
+        "probability_major": 20,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Banded Mail of Luck",
+        "book": "DMG220",
+        "cost": 1890000,
+        "probability_medium": 100,
+        "probability_major": 32,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Celestial Armor",
+        "book": "DMG220",
+        "cost": 2240000,
+        "probability_major": 50,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Plate Armor of the Deep",
+        "book": "DMG220",
+        "cost": 2465000,
+        "probability_major": 60,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Breastplate of Command",
+        "book": "DMG220",
+        "cost": 2540000,
+        "probability_major": 75,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Mithral Full Plate of Speed",
+        "book": "DMG220",
+        "cost": 2650000,
+        "probability_major": 90,
+        "type": "magic item",
+        "item types": "Armor"
+    },
+    {
+        "name": "Demon Armor",
+        "book": "DMG220",
+        "cost": 5226000,
+        "probability_major": 100,
+        "type": "magic item",
+        "item types": "Armor"
+    }
 ]

@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("LewtzGUI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Paradigm Omega Development")]
 [assembly: AssemblyProduct("LewtzGUI")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
