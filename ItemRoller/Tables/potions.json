@@ -1,0 +1,729 @@
+[{
+        "name": "Potion of Cure Light Wounds",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 10,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Endure Elements",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 13,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Hide From Animals",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 15,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Hide From Undead",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 17,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Jump",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 19,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Mage Armor",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 22,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Magic Fang",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 25,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Magic Stone",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 26,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Magic Weapon",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 29,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Pass Without Trace",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 30,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Protection From (Alignment)",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 32,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Remove Fear",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 34,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Sanctuary",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 35,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Shield of Faith +2",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 38,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Shillelagh",
+        "book": "DMG230",
+        "cost": 5000,
+        "probability_minor": 39,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Bless Weapon",
+        "book": "DMG230",
+        "cost": 10000,
+        "probability_minor": 41,
+        "probability_medium": 2,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Enlarge Person",
+        "book": "DMG230",
+        "cost": 25000,
+        "probability_minor": 44,
+        "probability_medium": 4,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Reduce Person",
+        "book": "DMG230",
+        "cost": 25000,
+        "probability_minor": 45,
+        "probability_medium": 5,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Aid",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 47,
+        "probability_medium": 6,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Barkskin +2",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 50,
+        "probability_medium": 7,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Bear's Endurance",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 53,
+        "probability_medium": 10,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Blur",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 56,
+        "probability_medium": 13,
+        "probability_major": 2,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Bull's Strength",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 59,
+        "probability_medium": 16,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Cat's Grace",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 62,
+        "probability_medium": 19,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Cure Moderate Wounds",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 67,
+        "probability_medium": 27,
+        "probability_major": 7,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Darkness",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 68,
+        "probability_medium": 28,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Darkvision",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 71,
+        "probability_medium": 30,
+        "probability_major": 9,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Delay Poison",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 74,
+        "probability_medium": 31,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Eagle's Splendor",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 76,
+        "probability_medium": 33,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Fox's Cunning",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 78,
+        "probability_medium": 35,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion (or Oil) of Invisibility",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 81,
+        "probability_medium": 37,
+        "probability_major": 11,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Lesser Restoration",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 84,
+        "probability_medium": 38,
+        "probability_major": 12,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion (or Oil) of Levitate",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 86,
+        "probability_medium": 39,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Misdirection",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 87,
+        "probability_medium": 40,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Owl's Wisdom",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 89,
+        "probability_medium": 42,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Protection From Arrows 10/magic",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 91,
+        "probability_medium": 43,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Remove Paralysis",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 93,
+        "probability_medium": 44,
+        "probability_major": 13,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Resist Energy 10",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 96,
+        "probability_medium": 46,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Shield of Faith +3",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 97,
+        "probability_medium": 48,
+        "probability_major": 14,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Spider Climb",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 99,
+        "probability_medium": 49,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Undetectable Alignment",
+        "book": "DMG230",
+        "cost": 30000,
+        "probability_minor": 100,
+        "probability_medium": 50,
+        "probability_major": 15,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Barkskin +3",
+        "book": "DMG230",
+        "cost": 60000,
+        "probability_medium": 51,
+        "probability_major": 16,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Shield of Faith +4",
+        "book": "DMG230",
+        "cost": 60000,
+        "probability_medium": 52,
+        "probability_major": 18,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Resist Energy 20",
+        "book": "DMG230",
+        "cost": 70000,
+        "probability_medium": 55,
+        "probability_major": 20,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Daylight",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 61,
+        "probability_major": 29,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Displacement",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 64,
+        "probability_major": 32,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Flame Arrow",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 65,
+        "probability_major": 33,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Fly",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 68,
+        "probability_major": 38,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Gaseous Form",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 69,
+        "probability_major": 39,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Greater Magic Fang +1",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 71,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Greater Magic Weapon +1",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 73,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Haste",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 75,
+        "probability_major": 41,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Heroism",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 78,
+        "probability_major": 44,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Keen Edge",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 80,
+        "probability_major": 46,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Magic Circle Against (Alignment)",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 81,
+        "probability_major": 47,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Magic Vestment +1",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 83,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Neutralize Poison",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 86,
+        "probability_major": 50,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Nondetection",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 88,
+        "probability_major": 52,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Protection From Energy (type)",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 91,
+        "probability_major": 54,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Rage",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 93,
+        "probability_major": 55,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Remove Blindness/Deafness",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 94,
+        "probability_major": 56,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Remove Curse",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 95,
+        "probability_major": 57,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Remove Disease",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 96,
+        "probability_major": 58,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Tongues",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 97,
+        "probability_major": 59,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Water Breathing",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 99,
+        "probability_major": 60,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Water Walk",
+        "book": "DMG230",
+        "cost": 75000,
+        "probability_medium": 100,
+        "probability_major": 61,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Barkskin +4",
+        "book": "DMG230",
+        "cost": 90000,
+        "probability_major": 63,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Shield of Faith +5",
+        "book": "DMG230",
+        "cost": 90000,
+        "probability_major": 64,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Good Hope",
+        "book": "DMG230",
+        "cost": 105000,
+        "probability_major": 65,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Resist Energy (type) 30",
+        "book": "DMG230",
+        "cost": 110000,
+        "probability_major": 68,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Barkskin +5",
+        "book": "DMG230",
+        "cost": 120000,
+        "probability_major": 69,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Greater Magic Fang +2",
+        "book": "DMG230",
+        "cost": 120000,
+        "probability_major": 73,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Greater Magic Weapon +2",
+        "book": "DMG230",
+        "cost": 120000,
+        "probability_major": 77,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Magic Vestment +2",
+        "book": "DMG230",
+        "cost": 120000,
+        "probability_major": 81,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Protection From Arrows 15/magic",
+        "book": "DMG230",
+        "cost": 150000,
+        "probability_major": 82,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Greater Magic Fang +3",
+        "book": "DMG230",
+        "cost": 180000,
+        "probability_major": 85,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Greater Magic Weapon +3",
+        "book": "DMG230",
+        "cost": 180000,
+        "probability_major": 88,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Magic Vestment +3",
+        "book": "DMG230",
+        "cost": 240000,
+        "probability_major": 91,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Greater Magic Fang +4",
+        "book": "DMG230",
+        "cost": 240000,
+        "probability_major": 93,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Greater Magic Weapon +4",
+        "book": "DMG230",
+        "cost": 240000,
+        "probability_major": 95,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Magic Vestment +4",
+        "book": "DMG230",
+        "cost": 240000,
+        "probability_major": 97,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Potion of Greater Magic Fang +5",
+        "book": "DMG230",
+        "cost": 300000,
+        "probability_major": 98,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Greater Magic Weapon +5",
+        "book": "DMG230",
+        "cost": 300000,
+        "probability_major": 99,
+        "type": "magic item",
+        "item_types": "Potion"
+    },
+    {
+        "name": "Oil of Magic Vestment +5",
+        "book": "DMG230",
+        "cost": 300000,
+        "probability_major": 100,
+        "type": "magic item",
+        "item_types": "Potion"
+    }
+]

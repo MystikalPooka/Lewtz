@@ -5,32 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vw="clr-namespace:LewtzGUI.Views"
         xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
-        xmlns:controls="clr-namespace:LewtzGUI.Controls"
+        xmlns:c="clr-namespace:LewtzGUI.Converters"
         Name="mainWindowView"
         mc:Ignorable="d">
+    <UserControl.Resources>
+        <c:ListCountEnabledConverter x:Key="ListCountEnabledConverter"/>
+    </UserControl.Resources>
 
-    <Grid Height="{Binding ActualHeight, ElementName=PrimaryContentControl}" 
-          Width="{Binding ActualWidth, ElementName=PrimaryContentControl}">
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto" MinHeight="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type vw:HoardControl}}}"/>
-            <RowDefinition Height="*" Name="LootBagRow"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="3*" Name="LootBagRow"/>
+            <RowDefinition Height="auto" Name="horizontalsplitter"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto" MinWidth="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type vw:HoardControl}}}"/>
             <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto" Name="verticalsplitter"/>
             <ColumnDefinition Width="*" Name="LootBagColumn"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+        <VirtualizingStackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
             <Button Command="{Binding AddItemRoller}" Width="auto" Height="auto">Add Hoard</Button>
             <Button Command="{Binding RemoveItemRoller}" Width="auto" Height="auto">Remove Hoard</Button>
             <Button Command="{Binding RollAllLootCommand}" Width="auto" Height="auto">Loot All Hoards</Button>
-        </StackPanel>
+        </VirtualizingStackPanel>
 
         <ScrollViewer DataContext="{Binding ItemRollers}" Grid.Column="0" Grid.Row="1" 
-                  VerticalAlignment="Top"
-                   VerticalScrollBarVisibility="Auto">
-            <ItemsControl ItemsSource="{Binding}"
+                      VerticalAlignment="Top"
+                      VerticalScrollBarVisibility="Auto">
+            <ItemsControl VirtualizingPanel.VirtualizationMode="Recycling" 
+                          VirtualizingPanel.IsVirtualizing="True"                          
+                          ItemsSource="{Binding}"
                           ItemTemplate="{DynamicResource ItemRoller}"/>
         </ScrollViewer>
 
@@ -39,7 +45,6 @@
                       HorizontalAlignment="Center" Margin="2"
                       BorderBrush="DarkSlateGray" Background="Black"/>
 
-
         <ScrollViewer DataContext="{Binding ItemRollers}" Grid.Row="1" Grid.Column="2" 
                       VerticalScrollBarVisibility="Auto"
                       VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
@@ -47,11 +52,42 @@
                           ItemTemplate="{DynamicResource LootBags}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <WrapPanel Background="LightSlateGray" Margin="3" IsItemsHost="True"/>
+                        <WrapPanel VirtualizingPanel.VirtualizationMode="Recycling" 
+                                   VirtualizingPanel.IsVirtualizing="True"
+                                   Background="LightSlateGray" Margin="3" IsItemsHost="True"/>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
         </ScrollViewer>
 
+        <GridSplitter Grid.Row="2" Grid.ColumnSpan="3"
+                      HorizontalAlignment="Stretch" Height="4"
+                      Margin="2"
+                      BorderBrush="DarkSlateGray"
+                      Background="Black" Panel.ZIndex="1"/>
+
+        <TreeView Grid.Row="3" Grid.ColumnSpan="3" 
+                  Background="AliceBlue"
+                  DataContext="{Binding Path=RepoView}"
+                  ItemsSource="{Binding Path=Children}"
+                  Name="tableView">
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type vm:ItemViewModel}" 
+                                          ItemsSource="{Binding Children}">
+                    <GroupBox Header="{Binding Path=ItemName}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding ItemBook, StringFormat='Book: {0}'}"
+                                                   FontSize="13" FontStyle="normal" FontWeight="SemiBold" Margin="2"/>
+                            <GridSplitter BorderBrush="Black" BorderThickness="1" VerticalAlignment="Stretch"/>
+                            <TextBlock Text="{Binding ItemProbability, StringFormat='Probability: {0}'}"
+                                                   FontSize="13" FontStyle="Normal" FontWeight="SemiBold" Margin="2"/>
+                            <GridSplitter BorderBrush="Black" BorderThickness="1" VerticalAlignment="Stretch"/>
+                            <TextBlock Text="{Binding ItemTypes, StringFormat='ItemTypes: {0}'}"
+                                                   FontSize="13" FontStyle="Normal" FontWeight="SemiBold" Margin="2"/>
+                        </StackPanel>
+                    </GroupBox>
+                </HierarchicalDataTemplate>
+            </TreeView.Resources>
+        </TreeView>
     </Grid>
 </UserControl>

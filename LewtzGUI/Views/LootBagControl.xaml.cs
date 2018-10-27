@@ -18,9 +18,9 @@ namespace LewtzGUI.Views
     /// <summary>
     /// Interaction logic for ItemControl.xaml
     /// </summary>
-    public partial class ItemControl : UserControl
+    public partial class LootBagControl : UserControl
     {
-        public ItemControl()
+        public LootBagControl()
         {
             InitializeComponent();
         }

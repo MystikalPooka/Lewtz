@@ -95,8 +95,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controls\InvertedWrapPanel.cs" />
-    <Compile Include="Controls\SmartWrapPanel.cs" />
+    <Compile Include="Commands\OpenWindowCommand.cs" />
+    <Compile Include="Commands\ShowDialogCommand.cs" />
+    <Compile Include="Converters\ListCountEnabledConverter.cs" />
     <Compile Include="Data Access\TableRepository.cs" />
     <Compile Include="ViewModel\CommandViewModel.cs" />
     <Compile Include="ViewModel\ItemRollerViewModel.cs" />
@@ -107,8 +108,8 @@
     <Compile Include="Views\HoardControl.xaml.cs">
       <DependentUpon>HoardControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ItemControl.xaml.cs">
-      <DependentUpon>ItemControl.xaml</DependentUpon>
+    <Compile Include="Views\LootBagControl.xaml.cs">
+      <DependentUpon>LootBagControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainWindowView.xaml.cs">
       <DependentUpon>MainWindowView.xaml</DependentUpon>
@@ -129,7 +130,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ItemControl.xaml">
+    <Page Include="Views\LootBagControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,9 +169,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ItemRoller\ItemRoller\ItemRoller.csproj">
       <Project>{7A5A3856-3447-48F5-97B2-E86A197F9098}</Project>

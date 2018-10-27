@@ -1,4 +1,4 @@
-﻿<UserControl x:Name="lootBagControl" x:Class="LewtzGUI.Views.ItemControl"
+﻿<UserControl x:Name="lootBagControl" x:Class="LewtzGUI.Views.LootBagControl"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,6 @@
       xmlns:local="clr-namespace:LewtzGUI.Views"
       xmlns:vw="clr-namespace:LewtzGUI.Views"
       xmlns:vm="clr-namespace:LewtzGUI.ViewModel"
-      xmlns:controls="clr-namespace:LewtzGUI.Controls"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300">
 
@@ -17,7 +16,7 @@
         </GroupBox.Header>
         <ItemsControl ItemsSource="{Binding LootBag}">
             <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate >
+                <ItemsPanelTemplate>
                     <WrapPanel IsItemsHost="True" Orientation="Horizontal"
                                HorizontalAlignment="Left" Margin="6" Width="auto" 
                                Background="{Binding LootBackgroundBrush}"/>
@@ -25,18 +24,16 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate DataType="{x:Type vm:ItemViewModel}">
-                    <GroupBox Height="auto" DataContext="{Binding ViewItem}" BorderBrush="Black" Margin="2" Background="Gainsboro">
+                    <GroupBox Height="auto" DataContext="{Binding}" BorderBrush="Black" Margin="2" Background="Gainsboro">
                         <GroupBox.Header>
-                            <TextBlock Margin="0,2,1,2" MinWidth="25" Text="{Binding Name}" 
+                            <TextBlock Margin="0,2,1,2" MinWidth="25" Text="{Binding ItemName}" 
                                                FontWeight="Bold" FontSize="11"/>
-
                         </GroupBox.Header>
                         <Expander Margin="2,-2,2,-2" Header="Details" BorderBrush="Black" BorderThickness="1"
                                           FontSize="10" FontStyle="Italic">
                             <StackPanel Orientation="Vertical" Margin="2" Height="auto" Width="auto" Background="DarkCyan">
-                                <TextBlock FontSize="11" FontStyle="Normal" Margin="0">
-                                </TextBlock>
-                                <TextBlock Text="{Binding Book, StringFormat='Book: {0}'}"
+                                <TextBlock FontSize="11" FontStyle="Normal" Margin="0"/>
+                                <TextBlock Text="{Binding ItemBook, StringFormat='Book: {0}'}"
                                                    FontSize="11" FontStyle="Normal" Margin="2"/>
                             </StackPanel>
                         </Expander>

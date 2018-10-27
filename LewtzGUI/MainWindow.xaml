@@ -6,13 +6,15 @@
         xmlns:local="clr-namespace:LewtzGUI"
         mc:Ignorable="d"
         xmlns:vw="clr-namespace:LewtzGUI.Views"
+        xmlns:vm="clr-namespace:LewtzGUI.ViewModel" 
+        xmlns:comm="clr-namespace:LewtzGUI.Commands"
         Title="LEWT THAT SHIT" 
         Name="mainWindow"
         Height="auto" Width="auto"
         ResizeMode="CanResizeWithGrip">
     <Window.Resources>
-        <DataTemplate xmlns:t="clr-namespace:LewtzGUI.ViewModel" 
-            DataType="{x:Type t:MainWindowViewModel}">
+        <DataTemplate 
+            DataType="{x:Type vm:MainWindowViewModel}">
             <vw:MainWindowView/>
         </DataTemplate>
     </Window.Resources>
@@ -29,8 +31,11 @@
             <MenuItem Header="_File">
                 <MenuItem Header="_Exit" 
                     Command="{Binding CloseCommand}"/>
+                
             </MenuItem>
-            <MenuItem Header="_Edit" />
+            <MenuItem Header="_Edit" >
+                <MenuItem Header="_Tables"/>
+            </MenuItem>
             <MenuItem Header="_Options" />
             <MenuItem Header="_Help" />
         </Menu>

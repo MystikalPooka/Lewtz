@@ -1,18 +1,41 @@
 ﻿using LewtzGUI.Data_Access;
-using System;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 using System.Windows.Input;
-using LewtzGUI.Controls;
 using System.ComponentModel;
-using System.Windows;
+using LewtzGUI.Commands;
 
 namespace LewtzGUI.ViewModel
 {
     class MainWindowViewModel : ViewModelBase
     {
-        TableRepository MainDBContext;
+        private TableRepository _mainDBContext;
+        public TableRepository MainDBContext
+        {
+            get
+            {
+                return _mainDBContext;
+            }
 
+            set
+            {
+                _mainDBContext = value;
+                OnPropertyChanged("MainDBContext");
+            }
+        }
+
+        private ItemViewModel _RepoView;
+        public ItemViewModel RepoView
+        {
+            get
+            {
+                return _RepoView;
+            }
+
+            set
+            {
+                _RepoView = value;
+                OnPropertyChanged("RepoView");
+            }
+        }
 
         private BindingList<ItemRollerViewModel> _ItemRollers;
         public BindingList<ItemRollerViewModel> ItemRollers
@@ -75,7 +98,6 @@ namespace LewtzGUI.ViewModel
             }
         }
 
-
         void RollAllLoot()
         {
             foreach(var hoard in _ItemRollers)
@@ -89,8 +111,39 @@ namespace LewtzGUI.ViewModel
             if (MainDBContext == null)
             {
                 MainDBContext = new TableRepository();
+                RepoView = new ItemViewModel(MainDBContext.DatabaseContext.GetTableFromString("magic base"));
             }
             this.ItemRollers.Add(new ItemRollerViewModel(MainDBContext));
         }
+
+        RelayCommand _closeCommand;
+        public ICommand CloseCommand
+        {
+            get
+            {
+                if (_closeCommand == null)
+                {
+                    _closeCommand = new RelayCommand(
+                       param => Close(),
+                       param => CanClose()
+                       );
+                }
+                return _closeCommand;
+            }
+        }
+
+        private OpenWindowCommand _openWindowCommand = new OpenWindowCommand();
+        public OpenWindowCommand OpenWindowCommand {
+            get
+            {
+                return _openWindowCommand;
+            }
+
+            private set
+            {
+
+            }
+        }
+        public ShowDialogCommand ShowDialogCommand { get; private set; }
     }
 }

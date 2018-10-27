@@ -1,0 +1,72 @@
+[{
+        "name": "alchemists fire",
+        "book": "DMG56",
+        "probability": 12,
+        "type": "item",
+        "item types": "Alchemical",
+        "cost": 2000,
+        "count": "1d4"
+    },
+    {
+        "name": "acid",
+        "book": "DMG56",
+        "probability": 24,
+        "type": "item",
+        "item types": "Alchemical",
+        "cost": 1000,
+        "count": "2d4"
+    },
+    {
+        "name": "smokesticks",
+        "book": "DMG56",
+        "probability": 36,
+        "type": "item",
+        "item types": "Alchemical",
+        "cost": 2000,
+        "count": "1d4"
+    },
+    {
+        "name": "holy water",
+        "book": "DMG56",
+        "probability": 48,
+        "type": "item",
+        "item types": "Alchemical",
+        "cost": 2500,
+        "count": "1d4"
+    },
+    {
+        "name": "antitoxin",
+        "book": "DMG56",
+        "probability": 62,
+        "type": "item",
+        "item types": "Alchemical",
+        "cost": 5000,
+        "count": "1d4"
+    },
+    {
+        "name": "everburning torch",
+        "book": "DMG56",
+        "probability": 74,
+        "type": "item",
+        "item types": "Alchemical",
+        "cost": 0
+    },
+    {
+        "name": "tanglefoot bags",
+        "book": "DMG56",
+        "probability": 88,
+        "type": "item",
+        "item types": "Alchemical",
+        "cost": 5000,
+        "count": "1d4"
+    },
+    {
+        "name": "thunderstones",
+        "book": "DMG56",
+        "probability": 100,
+        "type": "item",
+        "item types": "Alchemical",
+        "cost": 3000,
+        "count": "1d4"
+    }
+]

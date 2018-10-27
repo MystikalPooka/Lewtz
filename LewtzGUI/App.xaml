@@ -12,7 +12,7 @@
             </DataTemplate>
 
         <DataTemplate x:Key="LootBags" DataType="{x:Type vm:ItemViewModel}">
-            <vw:ItemControl/>
+            <vw:LootBagControl/>
         </DataTemplate>
 
         <ObjectDataProvider MethodName="GetType"

@@ -17,27 +17,38 @@ namespace ItemRoller.Loaders
             {
                 var json = File.ReadAllText(filename);
                 JToken token = JToken.Parse(json);
-
                 tableToLoad = new Table(getNameFromFilename(filename));
                 _filename = filename;
 
                 foreach (JObject obj in token)
                 {
                     var probabilityList = probabilitiesFromNode(obj);
+                    JObject objCopy = obj;
                     foreach (JProperty prob in probabilityList)
                     {
-                        Component loadedComponent = loadComponent(obj); ;
+                        objCopy.Add("probability", prob.Value);
+                        Component loadedComponent = loadComponent(objCopy);
                         if (loadedComponent == null) break;
-
+ 
                         var types = probabilityTypes(prob);
-                        loadedComponent.Types |= types;
-                        if ((types & tableToLoad.Types) != 0 || tableToLoad.Types == ItemTypes.None)
+
+                        var parentTypes = loadedComponent.ParentTable.Types;
+                        //if the parent table has a magic type, 
+                        //it should be matched to the loaded component's type
+                        if ((parentTypes & ItemTypes.Magic) != 0)
                         {
+                            if()
                             loadedComponent.ParentTable = tableToLoad;
                             loadedComponent.Probability = (int)prob.Value;
-                            
+
                             tableToLoad.Add(loadedComponent);
                             tableToLoad.SortTable();
+                        }
+
+                        //TODO: FIX THIS SHIT 
+                        if ((types & loadedComponent.ParentTable.Types) != 0 || tableToLoad.Types == ItemTypes.None)
+                        {
+
                         }
                     }
                 }

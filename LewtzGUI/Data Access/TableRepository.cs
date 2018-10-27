@@ -18,7 +18,6 @@ namespace LewtzGUI.Data_Access
             DatabaseContext.LoadSingleFile(@"..\..\..\ItemRoller\Tables\treasure table.json", new JSONLoader());
             DatabaseContext.LoadSingleFile(@"..\..\..\ItemRoller\Tables\magic base.json", new JSONLoader());
             DatabaseContext.LoadAllMatchingStringFromDirectory(@"..\..\..\ItemRoller\Tables", @"*special abilities*", new JSONLoader());
-            //var baseTable = DatabaseContext.GetTableFromString("treasure table");
         }
 
         public List<Component> RollTableLoot(Table tableToRoll)

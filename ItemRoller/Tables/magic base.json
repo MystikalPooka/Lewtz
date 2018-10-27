@@ -1,74 +1,73 @@
-[
-	{
-	  "name":"magic armor and shields",
-	  "book":"DMG216",
-	  "probability_minor":10,
-	  "probability_medium":10,
-	  "probability_major":10,
-	  "type":"table"
-	},
-	{
-	  "name":"weapons",
-	  "book":"DMG216",
-	  "probability_minor":29,
-	  "probability_medium":20,
-	  "probability_major":20,
-	  "type":"table"
-	},
-	{
-	  "name":"potions",
-	  "book":"DMG216",
-	  "probability_minor":44,
-	  "probability_medium":30,
-	  "probability_major":25,
-	  "type":"table"
-	},
-	{
-	  "name":"rings",
-	  "book":"DMG216",
-	  "probability_minor":46,
-	  "probability_medium":40,
-	  "probability_major":35,
-	  "type":"table"
-	},
-	{
-	  "name":"rods",
-	  "book":"DMG216",
-	  "probability_minor":65,
-	  "probability_medium":50,
-	  "probability_major":45,
-	  "type":"table"
-	},
-	{
-	  "name":"scrolls",
-	  "book":"DMG216",
-	  "probability_minor":81,
-	  "probability_medium":65,
-	  "probability_major":55,
-	  "type":"table"
-	},
-	{
-	  "name":"staffs",
-	  "book":"DMG216",
-	  "probability_minor":86,
-	  "probability_medium":68,
-	  "probability_major":75,
-	  "type":"table"
-	},
-	{
-	  "name":"wands",
-	  "book":"DMG216",
-	  "probability_minor":91,
-	  "probability_medium":83,
-	  "probability_major":80,
-	  "type":"table"
-	},
-	{
-	  "name":"wondrous item",
-	  "book":"DMG216",
-	  "probability_minor":100,
-	  "probability_medium":100,
-	  "probability_major":100,
-	  "type":"table"
-	},
+[{
+        "name": "magic armor and shields",
+        "book": "DMG216",
+        "probability_minor": 10,
+        "probability_medium": 10,
+        "probability_major": 10,
+        "type": "table"
+    },
+    {
+        "name": "weapons",
+        "book": "DMG216",
+        "probability_minor": 29,
+        "probability_medium": 20,
+        "probability_major": 20,
+        "type": "table"
+    },
+    {
+        "name": "potions",
+        "book": "DMG216",
+        "probability_minor": 44,
+        "probability_medium": 30,
+        "probability_major": 25,
+        "type": "table"
+    },
+    {
+        "name": "rings",
+        "book": "DMG216",
+        "probability_minor": 46,
+        "probability_medium": 40,
+        "probability_major": 35,
+        "type": "table"
+    },
+    {
+        "name": "rods",
+        "book": "DMG216",
+        "probability_minor": 65,
+        "probability_medium": 50,
+        "probability_major": 45,
+        "type": "table"
+    },
+    {
+        "name": "scrolls",
+        "book": "DMG216",
+        "probability_minor": 81,
+        "probability_medium": 65,
+        "probability_major": 55,
+        "type": "table"
+    },
+    {
+        "name": "staffs",
+        "book": "DMG216",
+        "probability_minor": 86,
+        "probability_medium": 68,
+        "probability_major": 75,
+        "type": "table"
+    },
+    {
+        "name": "wands",
+        "book": "DMG216",
+        "probability_minor": 91,
+        "probability_medium": 83,
+        "probability_major": 80,
+        "type": "table"
+    },
+    {
+        "name": "wondrous item",
+        "book": "DMG216",
+        "probability_minor": 100,
+        "probability_medium": 100,
+        "probability_major": 100,
+        "type": "table"
+    }
 ]

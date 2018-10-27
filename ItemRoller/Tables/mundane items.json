@@ -1,9 +1,29 @@
-[
-	{
-	  "name":"weapons",
-	  "book":"DMG222",
-	  "probability":100,
-	  "type":"table",
-	  "item types": "Weapon"
-	}
+[{
+        "name": "alchemical items",
+        "book": "DMG56",
+        "probability": 17,
+        "type": "table",
+        "item types": "Alchemical"
+    },
+    {
+        "name": "armor",
+        "book": "DMG222",
+        "probability": 50,
+        "type": "table",
+        "item types": "Weapon"
+    },
+    {
+        "name": "weapons",
+        "book": "DMG222",
+        "probability": 83,
+        "type": "table",
+        "item types": "Weapon"
+    },
+    {
+        "name": "tools and gear",
+        "book": "DMG56",
+        "probability": 100,
+        "type": "table",
+        "item types": "Tool"
+    }
 ]

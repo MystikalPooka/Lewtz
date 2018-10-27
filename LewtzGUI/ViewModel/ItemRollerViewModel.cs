@@ -154,23 +154,5 @@ namespace LewtzGUI.ViewModel
                 } 
             }
         }
-
-        RelayCommand _closeCommand;
-        public ICommand CloseCommand
-        {
-            get
-            {
-                if (_closeCommand == null)
-                {
-                    _closeCommand = new RelayCommand(
-                       param => Close(),
-                       param => CanClose()
-                       );
-                }
-                return _closeCommand;
-            }
-        }
-
-     
     }
 }

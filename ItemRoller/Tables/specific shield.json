@@ -24,5 +24,50 @@
         "probability_medium": 70,
         "type": "magic item",
         "item types": "Shield"
+    },
+    {
+        "name": "Caster's Shield",
+        "book": "DMG221",
+        "cost": 315300,
+        "probability_minor": 100,
+        "probability_medium": 85,
+        "probability_major": 20,
+        "type": "magic item",
+        "item types": "Shield"
+    },
+    {
+        "name": "Spined Shield",
+        "book": "DMG221",
+        "cost": 558000,
+        "probability_medium": 90,
+        "probability_major": 40,
+        "type": "magic item",
+        "item types": "Shield"
+    },
+    {
+        "name": "Lion's Shield",
+        "book": "DMG221",
+        "cost": 917000,
+        "probability_medium": 95,
+        "probability_major": 60,
+        "type": "magic item",
+        "item types": "Shield"
+    },
+    {
+        "name": "Winged Shield",
+        "book": "DMG221",
+        "cost": 1725700,
+        "probability_medium": 95,
+        "probability_major": 90,
+        "type": "magic item",
+        "item types": "Shield"
+    },
+    {
+        "name": "Absorbing Shield",
+        "book": "DMG221",
+        "cost": 5017000,
+        "probability_major": 100,
+        "type": "magic item",
+        "item types": "Shield"
     }
 ]
