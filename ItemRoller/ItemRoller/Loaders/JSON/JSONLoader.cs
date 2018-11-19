@@ -17,6 +17,7 @@ namespace ItemRoller.Loaders
             {
                 var json = File.ReadAllText(filename);
                 JToken token = JToken.Parse(json);
+
                 tableToLoad = new Table(getNameFromFilename(filename));
                 _filename = filename;
 
@@ -26,29 +27,24 @@ namespace ItemRoller.Loaders
                     JObject objCopy = obj;
                     foreach (JProperty prob in probabilityList)
                     {
-                        objCopy.Add("probability", prob.Value);
+                        //objCopy.Add("probability", prob.Value);
                         Component loadedComponent = loadComponent(objCopy);
                         if (loadedComponent == null) break;
  
                         var types = probabilityTypes(prob);
+                        loadedComponent.Types |= types;
+                        var parentTypes = tableToLoad.Types;
 
-                        var parentTypes = loadedComponent.ParentTable.Types;
-                        //if the parent table has a magic type, 
-                        //it should be matched to the loaded component's type
-                        if ((parentTypes & ItemTypes.Magic) != 0)
+                        if ((types & parentTypes) != 0 || tableToLoad.Types == ItemTypes.None)
                         {
-                            if()
+                            //if the parent table has a magic type, 
+                            //it should be matched to the loaded component's type
+
                             loadedComponent.ParentTable = tableToLoad;
                             loadedComponent.Probability = (int)prob.Value;
 
                             tableToLoad.Add(loadedComponent);
                             tableToLoad.SortTable();
-                        }
-
-                        //TODO: FIX THIS SHIT 
-                        if ((types & loadedComponent.ParentTable.Types) != 0 || tableToLoad.Types == ItemTypes.None)
-                        {
-
                         }
                     }
                 }
